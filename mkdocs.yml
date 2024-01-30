@@ -5,7 +5,7 @@ site_description: 'ESA AI Docs'
 repo_name: 'ai-extensions/docs'
 repo_url: 'https://github.com/ai-extensions/docs'
 edit_uri: 'blob/main/docs/src/'
-site_url: 'https://github.io/ai-docs'
+#site_url: 'https://github.io/ai-docs'
 
 
 theme:
