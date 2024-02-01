@@ -36,6 +36,19 @@ The ML-Flow dashboard will appear.
 
 ## Functionalities 
 ### Connection to STAC API
+A dedicated STAC API endpoint was configured and can be access from the App Hub by providing the appropriate authorisation `headers`. 
+```
+cat = Client.open("https://ai-extensions-stac.terradue.com", headers=headers, ignore_conformance=True)
+```
+To show the available collections in the Catalog.
+```
+[c for c in cat.get_collections()]
+
+[<CollectionClient id=ai-extensions-svv-dataset-labels>,
+ <CollectionClient id=sentinel-s2-l2a-cogs>,
+ <CollectionClient id=EUROSAT_2024_dataset>,
+ <CollectionClient id=gisat-col>]
+```
 
 ### Access to AWS s3
 A dedicated Amazon S3 storage is pre-configured to be accessed from the App Hub. This can be done with the Amazon Web Server (AWS) `aws s3` commands in the AWS CLI.
