@@ -8,8 +8,8 @@ This User Manual provides a guideline, as well as step-by-step instructions, for
 
 ## Registration
 
-* App Hub url: [https://app-hub-ai-extensions-dev.terradue.com/](https://app-hub-ai-extensions-dev.terradue.com/)
-* User Registration
+* App Hub URL: [https://app-hub-ai-extensions-dev.terradue.com/](https://app-hub-ai-extensions-dev.terradue.com/)
+* User Registration: *add steps*
 * JupyterHub - Server Options: different options can be configured for your username. These will be visible on the JupyterHub dashboard after login. In the example shown below, two server options are available. You can click on one (e.g. "**Machine Learning Lab 0.10 Large (12GB RAM)**") and click on `Start` to launch it. 
 <img src="../images/login_choice.png" width="800">
 
