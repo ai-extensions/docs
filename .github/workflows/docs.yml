@@ -26,8 +26,16 @@ jobs:
             channels: terradue,conda-forge
             channel-priority: flexible
 
-      - name: Install project
+      #- name: Install project
+      #  run: |
+      #    echo Starting 
+      #- run: /home/runner/micromamba-root/envs/env_docs/bin/mkdocs gh-deploy --force
+      - name: Build MkDocs
         run: |
-          echo Starting 
+          /home/runner/micromamba-root/envs/env_docs/bin/mkdocs build -d public
 
-      - run: /home/runner/micromamba-root/envs/env_docs/bin/mkdocs gh-deploy --force
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.DEPLOY_KEY }} # Add a secret for the deploy key
+          publish_dir: ./public
