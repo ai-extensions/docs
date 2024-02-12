@@ -20,6 +20,8 @@ After loading up, the JupyterLab dashboard will appear.
 <p align="center" ><img src="../images/jupyterlab_dashboard.png" alt="Picture" width="80%" height="100%"style=" display: block; margin: 20 auto;"/></p>
 
 ### Code Server
+Code Server enables the user to run Visual Studio Code (VS Code) and all its functionalities directly from the Application Hub. 
+
 On the JupyterLab dashboard, click on the Code Server Logo.
 
 <p align="center" ><img src="../images/codeserver_icon.png" alt="Picture" width="100" height="100"style=" display: block; margin: 20 auto;"/></p>
@@ -27,6 +29,15 @@ On the JupyterLab dashboard, click on the Code Server Logo.
 The Code Server dashboard will appear.
 
 <p align="center" ><img src="../images/codeserver_dashboard.png" alt="Picture" width="80%" height="100%"style=" display: block; margin: 20 auto;"/></p>
+
+You have access of all these functionalities from the vertical panel in the top-left corner of the dashboard:
+* **Menu**: access functions and settings within VS Code
+* **Explore**: navigate and manage files and directories in your workspace 
+* **Search**: find specific files, text, or symbols within your workspace
+* **Source Control**: manage version control system such as Git directly within VS Code
+* **Run and Debug**: execute and debug code with built-in tools
+* **Extensions**: enhance functionality by installing and managing extensions to support the development workflow 
+* **Test**: run tests and view test outptus 
 
 ### ML-Flow
 On the JupyterLab dashboard, click on the ML-Flow Logo.
