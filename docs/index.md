@@ -12,23 +12,23 @@ This User Manual provides a guideline, as well as step-by-step instructions, for
 * User Registration: *add steps*
 * JupyterHub - Server Options: different options can be configured for your username. These will be visible on the JupyterHub dashboard after login. In the example shown below, two server options are available. You can click on one (e.g. "**Machine Learning Lab 0.10 Large (12GB RAM)**") and click on `Start` to launch it. 
 
-<p align="center" ><img src="../images/login_choice.png" alt="Picture" width="80%" height="100%"style=" display: block; margin: 20 auto;"/></p>
+<p align="left" ><img src="../images/login_choice.png" alt="Picture" width="80%" height="100%"style=" display: block; margin: 20 auto;"/></p>
 ## Applications
 ### JupyterLab
 After loading up, the JupyterLab dashboard will appear.
 
-<p align="center" ><img src="../images/jupyterlab_dashboard.png" alt="Picture" width="80%" height="100%"style=" display: block; margin: 20 auto;"/></p>
+<p align="left" ><img src="../images/jupyterlab_dashboard.png" alt="Picture" width="80%" height="100%"style=" display: block; margin: 20 auto;"/></p>
 
 ### Code Server
 Code Server enables the user to run Visual Studio Code (VS Code) and all its functionalities directly from the Application Hub. 
 
 On the JupyterLab dashboard, click on the Code Server Logo.
 
-<p align="center" ><img src="../images/codeserver_icon.png" alt="Picture" width="100" height="100"style=" display: block; margin: 20 auto;"/></p>
+<p align="left" ><img src="../images/codeserver_icon.png" alt="Picture" width="100" height="100"style=" display: block; margin: 20 auto;"/></p>
 
 The Code Server dashboard will appear.
 
-<p align="center" ><img src="../images/codeserver_dashboard.png" alt="Picture" width="80%" height="100%"style=" display: block; margin: 20 auto;"/></p>
+<p align="left" ><img src="../images/codeserver_dashboard.png" alt="Picture" width="80%" height="100%"style=" display: block; margin: 20 auto;"/></p>
 
 You have access of all these functionalities from the vertical panel in the top-left corner of the dashboard:
 * **Menu**: access functions and settings within VS Code
@@ -42,29 +42,29 @@ You have access of all these functionalities from the vertical panel in the top-
 ### ML-Flow
 On the JupyterLab dashboard, click on the ML-Flow Logo.
 
-<p align="center" ><img src="../images/mlflow_icon.png" alt="Picture" width="100" height="100"style=" display: block; margin: 20 auto;"/></p>
+<p align="left" ><img src="../images/mlflow_icon.png" alt="Picture" width="100" height="100"style=" display: block; margin: 20 auto;"/></p>
 
 The ML-Flow dashboard will appear.
 
-<p align="center" ><img src="../images/mlflow_dashboard.png" alt="Picture" width="80%" height="100%"style=" display: block; margin: 20 auto;"/></p>
+<p align="left" ><img src="../images/mlflow_dashboard.png" alt="Picture" width="80%" height="100%"style=" display: block; margin: 20 auto;"/></p>
 
 > Example of using mlflow in a Machine learning project:
 >
 >- The user select some runs for comparision and click on **Compare**
 >
-><p align="center" ><img src="../images/selectrun.png" alt="Picture" width="60%" height="100%"style=" display: >block; margin: 20 auto;"/></p>
+><p align="left" ><img src="../images/selectrun.png" alt="Picture" width="60%" height="100%"style=" display: >block; margin: 20 auto;"/></p>
 >
 > - The user can see a quick overview of each run.
 >
-> <p align="center" ><img src="../images/rundetails.png" alt="Picture" width="60%" height="100%" style=" display: >block; margin: 20 auto;"/></p>
+> <p align="left" ><img src="../images/rundetails.png" alt="Picture" width="60%" height="100%" style=" display: >block; margin: 20 auto;"/></p>
 >        
 >- The user compare diferent parameteres fed to the CNN model.
 >
-><p align="center" ><img src="../images/parameters.png" alt="Picture" width="60%" height="100%"style=" display: >block; margin: 20 auto;"/></p> 
+><p align="left" ><img src="../images/parameters.png" alt="Picture" width="60%" height="100%"style=" display: >block; margin: 20 auto;"/></p> 
 >
 >- The user compare evaluation metrics to opt the best model for his/her application. 
 >
-><p align="center" ><img src="../images/metrics.png" alt="Picture" width="60%" height="100%"style=" >display: >block; margin: 20 auto;"/></p>        
+><p align="left" ><img src="../images/metrics.png" alt="Picture" width="60%" height="100%"style=" >display: >block; margin: 20 auto;"/></p>        
 
 
 ### QGIS
