@@ -48,7 +48,7 @@ On the JupyterLab dashboard, click on the `mlflow` Logo.
 
 The `MLflow` dashboard will appear.
 
-<p align="left" ><img src="../images/mlflow_dashboards.png" alt="Picture" width="80%" height="100%"style=" display: block; margin: 20 auto;"/></p>
+<p align="left" ><img src="../images/mlflow_dashboard.png" alt="Picture" width="80%"style=" display: block; margin: 20 auto;"/></p>
 
 Below are a few examples of using `MLflow` in a ML project workflow:
 * The user can select one or multiple runs to **Compare**
