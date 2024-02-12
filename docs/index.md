@@ -9,18 +9,23 @@ This User Manual provides a guideline, as well as step-by-step instructions, for
 ## Registration
 
 * App Hub URL: [https://app-hub-ai-extensions-dev.terradue.com/](https://app-hub-ai-extensions-dev.terradue.com/)
-* User Registration: *add steps*
-* JupyterHub - Server Options: different options can be configured for your username. These will be visible on the JupyterHub dashboard after login. In the example shown below, two server options are available. You can click on one (e.g. "**Machine Learning Lab 0.10 Large (12GB RAM)**") and click on `Start` to launch it. 
+* User Registration: *add steps - link to configuration.md file?!*
+* JupyterHub - Server Options: different server options can be configured for your username. These will be visible on the JupyterHub dashboard after login. In the example shown below, a few server options are available. You can select one (e.g. "**Machine Learning Lab 0.10 Large (12GB RAM)**") and then click on `Start` to launch it. 
 
-<p align="left" ><img src="../images/login_choice.png" alt="Picture" width="80%" height="100%"style=" display: block; margin: 20 auto;"/></p>
+<p align="left" ><img src="../images/login_choice_ALL.png" alt="Picture" width="80%" height="100%"style=" display: block; margin: 20 auto;"/></p>
+
 ## Applications
+
 ### JupyterLab
-After loading up, the JupyterLab dashboard will appear.
+JupyterLab is an interactive development environment that enables users to create and share documents that contain live code, visualisation and other content. With its flexible and extensible architecture, JupyterLab provides a seamless interface for data science workflows, allowing users to explore, analyze, and collaborate on data-driven projects effortlessly. 
+Link to the official documentation: https://jupyter.org/. 
+
+After loading up, the JupyterLab dashboard will appear. 
 
 <p align="left" ><img src="../images/jupyterlab_dashboard.png" alt="Picture" width="80%" height="100%"style=" display: block; margin: 20 auto;"/></p>
 
 ### Code Server
-Code Server enables the user to run Visual Studio Code (VS Code) and all its functionalities directly from the Application Hub. 
+Code Server enables the user to run Visual Studio Code (VS Code), a lightweight and versatile source code editor that combines the simplicity of a text editor with powerful developer tools, providing an intuitive and customizable environment for coding across various programming languages. With Code Server, VS Code and all its functionalities are available directly from the Application Hub server. Link to the official documentation: https://code.visualstudio.com/docs/remote/vscode-server. 
 
 On the JupyterLab dashboard, click on the Code Server Logo.
 
@@ -40,7 +45,7 @@ You have access of all these functionalities from the vertical panel in the top-
 * **Test**: run tests and view test outptus 
 
 ### ML-Flow
-`MLflow` is a powerful open-source platform that simplifies the end-to-end machine learning (ML) lifecycle management. It provides tools for tracking experiments, model hyperparameters, packaging code into reproducible runs, and sharing and deploying models across different environments seamlessly. `MLflow` enables users to effectively organize and monitor their ML projects, enabling collaboration, reproducibility, and streamlined deployment workflows.
+`MLflow` is a powerful open-source platform that simplifies the end-to-end machine learning (ML) lifecycle management. It provides tools for tracking experiments, model hyperparameters, packaging code into reproducible runs, and sharing and deploying models across different environments seamlessly. `MLflow` enables users to effectively organize and monitor their ML projects, enabling collaboration, reproducibility, and streamlined deployment workflows. Link to the official documentation: https://mlflow.org/.
 
 On the JupyterLab dashboard, click on the `mlflow` Logo.
 
@@ -68,6 +73,14 @@ Below are a few examples of using `MLflow` in a ML project workflow:
 <p align="left" ><img src="../images/metrics.png" alt="Picture" width="60%" height="100%"style=" >display: >block; margin: 20 auto;"/></p>        
 
 ### QGIS
+QGIS is a free and open-source application for viewing, editing, and analysing geo-spatial data. It provides a versatile platform equipped with tools for spatial analysis, geoprocessing, and map production, empowering users to make informed decisions based on geographic data. Link to the official documentation: https://qgis.org/it/site/. 
+
+The QGIS-dedicated platform can be launched from the JupyterHub dashboard login page. When asked which Server Option to launch, select "**QGIS (includes tooling and plugings v0.4 aws)**" and then Start to launch it. 
+
+QGIS can then be launched by opening a terminal, typing `qgis` and executing it. The QGIS window will be displayed.
+<p align="left" ><img src="../images/qgis.png" alt="Picture" width="80%" height="100%" style=" display: >block; margin: 20 auto;"/></p>
+
+
 
 ## Functionalities 
 ### Connection to STAC API
