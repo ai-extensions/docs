@@ -20,7 +20,7 @@ Below are a few examples of using `MLflow` in a ML project workflow:
        
 * The user compares different parameteres fed to the CNN model
 
-![image]("../../images/parameters.png")
+![image](cd ../../images/parameters.png")
 
 <p align="left" ><img src="../../images/parameters.png" alt="Picture" width="60%" height="100%"style=" display: >block; margin: 20 auto;"/></p> 
 

@@ -6,7 +6,7 @@ repo_name: 'ai-extensions/docs'
 repo_url: 'https://github.com/ai-extensions/docs'
 edit_uri: 'blob/main/docs/src/'
 #site_url: 'https://github.io/ai-docs'
-
+site_url: 'https://ai-extensions.github.io/docs/'
 
 theme:
   name: material
@@ -22,7 +22,7 @@ plugins:
   - mkdocs-jupyter
 
 nav:
-  - Welcome to ESA AI-Extensions App Hub:
+  - ESA AI-Extensions App Hub:
     - intro/foreword.md
     - intro/registration.md
   - App Hub Core Services:
