@@ -61,7 +61,6 @@ r.json()
 
 ### Add user to group
 
-
 ```python
 import requests
 
