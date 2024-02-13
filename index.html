@@ -628,8 +628,26 @@ Link to the official documentation: https://jupyter.org/. </p>
 
 <h2 id="functionalities">Functionalities</h2>
 <h3 id="connection-to-stac-api">Connection to STAC API</h3>
-<p>A dedicated STAC API endpoint was configured and can be access from the App Hub by providing the appropriate authorisation <code>headers</code>. 
-<div class="highlight"><pre><span></span><code>cat = Client.open(&quot;https://ai-extensions-stac.terradue.com&quot;, headers=headers, ignore_conformance=True)
+<p>The SpatioTemporal Asset Catalog (STAC) is a powerful standard for describing geospatial data, so it can be more easily worked with, indexed, discovered and shared. Link to the official documentation: https://stacspec.org/en. </p>
+<p>The dedicated STAC Browser app can be launched at login with the option "<strong>STAC Browser for AI-Extensions STAC API</strong>".</p>
+<p align="left" ><img src="../images/login_choice_STAC.png" alt="Picture" width="80%" height="100%" style=" display: >block; margin: 20 auto;"/></p>
+
+<p>After login, the STAC Browser dashboard will appear, showing the existing collections, which you can browse and visualise. </p>
+<p align="left" ><img src="../images/stac-api.png" alt="Picture" width="80%" height="100%" style=" display: >block; margin: 20 auto;"/></p>
+
+<p>Alternatively, the dedicated STAC API endpoint can be accessed via Jupyter Notebook by providing the appropriate authorisation <code>headers</code>. </p>
+<p><div class="highlight"><pre><span></span><code>payload = {
+    &quot;client_id&quot;: &quot;ai-extensions&quot;,
+    &quot;username&quot;: &quot;ai-extensions-user&quot;,
+    &quot;password&quot;: os.environ.get(&quot;IAM_PASSWORD&quot;),
+    &quot;grant_type&quot;: &quot;password&quot;,
+}
+
+token = get_token(url=os.environ.get(&quot;IAM_URL&quot;), **payload)
+del(payload)
+headers = {&quot;Authorization&quot;: f&quot;Bearer {token}&quot;}
+
+cat = Client.open(&quot;https://ai-extensions-stac.terradue.com&quot;, headers=headers, ignore_conformance=True)
 </code></pre></div>
 To show the available collections in the Catalog.
 <div class="highlight"><pre><span></span><code>[c for c in cat.get_collections()]
