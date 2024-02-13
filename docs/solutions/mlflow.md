@@ -20,12 +20,8 @@ Below are a few examples of using `MLflow` in a ML project workflow:
        
 * The user compares different parameteres fed to the CNN model
 
-![image](cd ../../images/parameters.png")
-
 <p align="left" ><img src="../../images/parameters.png" alt="Picture" width="60%" height="100%"style=" display: >block; margin: 20 auto;"/></p> 
 
 * The user compares evaluation metrics of each run, to opt for the best model for his/her application. 
-
-![image](../../images/metrics.png)
 
 <p align="left" ><img src="../../images/metrics.png" alt="Picture" width="60%" height="100%"style=" >display: >block; margin: 20 auto;"/></p>        

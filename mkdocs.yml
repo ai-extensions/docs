@@ -1,12 +1,11 @@
-site_name: ESA AI Docs
-site_description: 'ESA AI Docs'
+site_name: ESA AI-Extensions App Hub User Manual
+site_description: 'ESA AI-Extensions App Hub User Manual'
 # Repository
 
 repo_name: 'ai-extensions/docs'
 repo_url: 'https://github.com/ai-extensions/docs'
 edit_uri: 'blob/main/docs/src/'
 #site_url: 'https://github.io/ai-docs'
-site_url: 'https://ai-extensions.github.io/docs/'
 
 theme:
   name: material
