@@ -95,7 +95,7 @@ After login, the STAC Browser dashboard will appear, showing the existing collec
 
 <p align="left" ><img src="../images/stac-api.png" alt="Picture" width="80%" height="100%" style=" display: >block; margin: 20 auto;"/></p>
 
-Alternatively, the dedicated STAC API endpoint can be accessed via Jupyter Notebook by providing the appropriate authorisation `headers`. 
+The dedicated STAC API endpoint can also be accessed via Jupyter Notebook by providing the appropriate authorisation `headers`. 
 
 ```
 payload = {
