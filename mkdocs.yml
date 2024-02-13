@@ -33,4 +33,4 @@ nav:
     - solutions/codeserver.md
     - solutions/mlflow.md
     - solutions/aws.md
-  - Archive: 'index_old.md'
+  - Archive: 'index.md'
