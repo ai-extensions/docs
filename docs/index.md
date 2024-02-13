@@ -14,8 +14,6 @@ This User Manual provides a guideline, as well as step-by-step instructions, for
 
 <p align="left" ><img src="../images/login_choice_ALL.png" alt="Picture" width="80%" height="100%"style=" display: block; margin: 20 auto;"/></p>
 
-![image](../images/login_choice_ALL.png)
-
 ## Applications
 
 ### JupyterLab
