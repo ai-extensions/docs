@@ -11,8 +11,10 @@
       
       
       
+        <link rel="prev" href="../mlflow/">
       
-        <link rel="next" href="../registration/">
+      
+        <link rel="next" href="../../index_old/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +22,7 @@
     
     
       
-        <title>Foreword - ESA AI-Extensions App Hub User Manual</title>
+        <title>Access to AWS s3 - ESA AI-Extensions App Hub User Manual</title>
       
     
     
@@ -62,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#foreword" class="md-skip">
+        <a href="#access-to-aws-s3" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Foreword
+              Access to AWS s3
             
           </span>
         </div>
@@ -212,19 +214,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
         
           
           <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
@@ -238,7 +238,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             ESA AI-Extensions App Hub
@@ -249,19 +249,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../intro/foreword/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -270,7 +261,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -283,7 +273,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../registration/" class="md-nav__link">
+      <a href="../../intro/registration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -413,17 +403,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -437,7 +429,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Solutions hosted on JupyterHub
@@ -451,7 +443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../solutions/jupyterlab/" class="md-nav__link">
+      <a href="../jupyterlab/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -472,7 +464,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../solutions/codeserver/" class="md-nav__link">
+      <a href="../codeserver/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -493,7 +485,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../solutions/mlflow/" class="md-nav__link">
+      <a href="../mlflow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -511,10 +503,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../solutions/aws/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -523,6 +524,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -591,9 +593,12 @@
   
 
 
-<h1 id="foreword">Foreword</h1>
-<p>The AI-Extensions project aims at supporting the Earth Science and Services Communities by expanding the existing Earth Observation (EO) platform offerings services with operationally mature AI/ML software capabilities. This is achieved through the AI-Extension Application Hub, a dedicated Cloud platform that provides the integration and operational implementation of EO and AI capabilities.  </p>
-<p>This User Manual provides a guideline, as well as step-by-step instructions, for developers and consumers to effectively leverage the AI-Extension Application Hub. </p>
+<h1 id="access-to-aws-s3">Access to AWS s3</h1>
+<p>A dedicated Amazon S3 storage is pre-configured to be accessed from the App Hub. This can be done with the Amazon Web Server (AWS) <code>aws s3</code> commands in the AWS CLI.</p>
+<p>For example, to list the content of a specific S3 bucket, you can use the command below.
+<div class="highlight"><pre><span></span><code>aws s3 ls &lt;bucket_name&gt;
+</code></pre></div>
+Other examples with full syntax on using the <code>aws s3</code> command are described in the official <a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html">AWS website</a>.</p>
 
 
 
