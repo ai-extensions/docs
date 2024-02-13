@@ -3,10 +3,12 @@ Code Server enables the user to run Visual Studio Code (VS Code), a lightweight 
 
 On the JupyterLab dashboard, click on the Code Server Logo.
 
+<p align="left" ><img src="./imgs/codeserver_icon.png" alt="Picture" width="100" height="100"style=" display: block; margin: 20 auto;"/></p>
 <p align="left" ><img src="../../images/codeserver_icon.png" alt="Picture" width="100" height="100"style=" display: block; margin: 20 auto;"/></p>
 
 The Code Server dashboard will appear.
 
+<p align="left" ><img src="./imgs/codeserver_dashboard.png" alt="Picture" width="80%" height="100%"style=" display: block; margin: 20 auto;"/></p>
 <p align="left" ><img src="../../images/codeserver_dashboard.png" alt="Picture" width="80%" height="100%"style=" display: block; margin: 20 auto;"/></p>
 
 You have access of all these functionalities from the vertical panel in the top-left corner of the dashboard:
