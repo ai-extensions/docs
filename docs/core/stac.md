@@ -1,4 +1,4 @@
-# Connection to STAC API
+# STAC API
 The SpatioTemporal Asset Catalog (STAC) is a powerful standard for describing geospatial data, so it can be more easily worked with, indexed, discovered and shared. Link to the official documentation: https://stacspec.org/en. 
 
 The dedicated STAC Browser app can be launched at login with the option "**STAC Browser for AI-Extensions STAC API**".

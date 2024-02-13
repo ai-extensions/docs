@@ -12,7 +12,7 @@ This User Manual provides a guideline, as well as step-by-step instructions, for
 * User Registration: *add steps - link to configuration.md file?!*
 * JupyterHub - Server Options: different server options can be configured for your username. These will be visible on the JupyterHub dashboard after login. In the example shown below, a few server options are available. You can select one (e.g. "**Machine Learning Lab 0.10 Large (12GB RAM)**") and then click on `Start` to launch it. 
 
-<p align="left" ><img src="../images/login_choice_ALL.png" alt="Picture" width="80%" height="100%"style=" display: block; margin: 20 auto;"/></p>
+![image](./core/imgs/jupyterhub_login_ALL.png)
 
 ## Applications
 
@@ -22,18 +22,21 @@ Link to the official documentation: https://jupyter.org/.
 
 After loading up, the JupyterLab dashboard will appear. 
 
-<p align="left" ><img src="../images/jupyterlab_dashboard.png" alt="Picture" width="80%" height="100%"style=" display: block; margin: 20 auto;"/></p>
+![image](./solutions/imgs/jupyterlab_dashboard.png)
+
 
 ### Code Server
 Code Server enables the user to run Visual Studio Code (VS Code), a lightweight and versatile source code editor that combines the simplicity of a text editor with powerful developer tools, providing an intuitive and customizable environment for coding across various programming languages. With Code Server, VS Code and all its functionalities are available directly from the Application Hub server. Link to the official documentation: https://code.visualstudio.com/docs/remote/vscode-server. 
 
 On the JupyterLab dashboard, click on the Code Server Logo.
 
-<p align="left" ><img src="../images/codeserver_icon.png" alt="Picture" width="100" height="100"style=" display: block; margin: 20 auto;"/></p>
+![image](./solutions/imgs/codeserver_icon.png)
+
 
 The Code Server dashboard will appear.
 
-<p align="left" ><img src="../images/codeserver_dashboard.png" alt="Picture" width="80%" height="100%"style=" display: block; margin: 20 auto;"/></p>
+![image](./solutions/imgs/codeserver_dashboard.png)
+
 
 You have access of all these functionalities from the vertical panel in the top-left corner of the dashboard:
 * **Menu**: access functions and settings within VS Code
@@ -49,38 +52,46 @@ You have access of all these functionalities from the vertical panel in the top-
 
 On the JupyterLab dashboard, click on the `mlflow` Logo.
 
-<p align="left" ><img src="../images/mlflow_icon.png" alt="Picture" width="100" height="100"style=" display: block; margin: 20 auto;"/></p>
+![image](./solutions/imgs/mlflow_icon.png)
+
 
 The `MLflow` dashboard will appear.
 
-<p align="left" ><img src="../images/mlflow_dashboard.png" alt="Picture" width="80%"style=" display: block; margin: 20 auto;"/></p>
+![image](./solutions/imgs/mlflow_dashboard.png)
+
 
 Below are a few examples of using `MLflow` in a ML project workflow:
 * The user can select one or multiple runs to **Compare**
 
-<p align="left" ><img src="../images/selectrun.png" alt="Picture" width="60%" height="100%"style=" display: >block; margin: 20 auto;"/></p>
+![image](./solutions/imgs/selectrun.png)
+
 
 * The user can see a quick overview of each run and select which parameter(s) to analyse and plot on the graph
 
-<p align="left" ><img src="../images/rundetails.png" alt="Picture" width="60%" height="100%" style=" display: >block; margin: 20 auto;"/></p>
+![image](./solutions/imgs/rundetails.png)
+
        
 * The user compares different parameteres fed to the CNN model
 
-<p align="left" ><img src="../images/parameters.png" alt="Picture" width="60%" height="100%"style=" display: >block; margin: 20 auto;"/></p> 
+![image](./solutions/imgs/parameters.png)
+
 
 * The user compares evaluation metrics of each run, to opt for the best model for his/her application. 
 
-<p align="left" ><img src="../images/metrics.png" alt="Picture" width="60%" height="100%"style=" >display: >block; margin: 20 auto;"/></p>        
+![image](./solutions/imgs/metrics.png)
+
 
 ### QGIS
 QGIS is a free and open-source application for viewing, editing, and analysing geo-spatial data. It provides a versatile platform equipped with tools for spatial analysis, geoprocessing, and map production, empowering users to make informed decisions based on geographic data. Link to the official documentation: https://qgis.org/it/site/. 
 
 The QGIS-dedicated platform can be launched from the JupyterHub dashboard login page. When asked which Server Option to launch, select "**QGIS (includes tooling and plugings v0.4 aws)**" and then Start to launch it. 
 
-<p align="left" ><img src="../images/login_choice_QGIS.png" alt="Picture" width="60%" style=" display: >block; margin: 20 auto;"/></p>
+![image](./core/imgs/login_choice_QGIS.png)
+
 
 QGIS can then be launched by opening a terminal, typing `qgis` and executing it. The QGIS window will be displayed.
-<p align="left" ><img src="../images/qgis.png" alt="Picture" width="80%" height="100%" style=" display: >block; margin: 20 auto;"/></p>
+![image](./core/imgs/qgis.png)
+
 
 
 ## Functionalities 
@@ -89,11 +100,13 @@ The SpatioTemporal Asset Catalog (STAC) is a powerful standard for describing ge
 
 The dedicated STAC Browser app can be launched at login with the option "**STAC Browser for AI-Extensions STAC API**".
 
-<p align="left" ><img src="../images/login_choice_STAC.png" alt="Picture" width="60%" style=" display: >block; margin: 20 auto;"/></p>
+![image](./core/imgs/login_choice_STAC.png)
+
 
 After login, the STAC Browser dashboard will appear, showing the existing collections, which you can browse and visualise. 
 
-<p align="left" ><img src="../images/stac-api.png" alt="Picture" width="80%" height="100%" style=" display: >block; margin: 20 auto;"/></p>
+![image](./core/imgs/stac-api.png)
+
 
 The dedicated STAC API endpoint can also be accessed via Jupyter Notebook by providing the appropriate authorisation `headers`. 
 

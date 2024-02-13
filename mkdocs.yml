@@ -32,5 +32,5 @@ nav:
     - solutions/jupyterlab.md
     - solutions/codeserver.md
     - solutions/mlflow.md
-    
-  - Introduction: 'index.md'
+    - solutions/aws.md
+  - Archive: 'index_old.md'
