@@ -13,6 +13,7 @@ This User Manual provides a guideline, as well as step-by-step instructions, for
 * JupyterHub - Server Options: different server options can be configured for your username. These will be visible on the JupyterHub dashboard after login. In the example shown below, a few server options are available. You can select one (e.g. "**Machine Learning Lab 0.10 Large (12GB RAM)**") and then click on `Start` to launch it. 
 
 <p align="left" ><img src="../images/login_choice_ALL.png" alt="Picture" width="80%" height="100%"style=" display: block; margin: 20 auto;"/></p>
+
 ![image](../images/login_choice_ALL.png)
 
 ## Applications
