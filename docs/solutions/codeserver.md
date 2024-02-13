@@ -5,13 +5,9 @@ On the JupyterLab dashboard, click on the Code Server Logo.
 
 ![image](./imgs/codeserver_icon.png)
 
-![image](../../images/codeserver_icon.png)
-
 The Code Server dashboard will appear.
 
 ![image](./imgs/codeserver_dashboard.png)
-
-![image](./../../images/codeserver_dashboard.png)
 
 You have access of all these functionalities from the vertical panel in the top-left corner of the dashboard:
 * **Menu**: access functions and settings within VS Code

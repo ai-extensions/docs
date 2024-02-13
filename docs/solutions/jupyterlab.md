@@ -4,4 +4,4 @@ Link to the official documentation: https://jupyter.org/.
 
 After loading up, the JupyterLab dashboard will appear. 
 
-<p align="left" ><img src="../../images/jupyterlab_dashboard.png" alt="Picture" width="80%" height="100%"style=" display: block; margin: 20 auto;"/></p>
+![image](./imgs/jupyterlab_dashboard.png)

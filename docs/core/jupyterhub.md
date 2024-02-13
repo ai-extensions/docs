@@ -5,7 +5,7 @@ After login on your dedicated App Hub instance (e.g. [https://app-hub-ai-extensi
 
 In the example shown below, seven server options are available: 
 
-<p align="left" ><img src="../../images/login_choice_ALL.png" alt="Picture" width="80%" height="100%"style=" display: block; margin: 20 auto;"/></p>
+![image](./imgs/jupyterhub_login_ALL.png)
 
 You can select one (e.g. "**Machine Learning Lab 0.10 Large (12GB RAM)**") and then click on `Start` to launch it. 
 

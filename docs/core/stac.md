@@ -3,11 +3,11 @@ The SpatioTemporal Asset Catalog (STAC) is a powerful standard for describing ge
 
 The dedicated STAC Browser app can be launched at login with the option "**STAC Browser for AI-Extensions STAC API**".
 
-<p align="left" ><img src="../../images/login_choice_STAC.png" alt="Picture" width="60%" style=" display: >block; margin: 20 auto;"/></p>
+![image](./imgs/login_choice_STAC.png)
 
 After login, the STAC Browser dashboard will appear, showing the existing collections, which you can browse and visualise. 
 
-<p align="left" ><img src="../../images/stac-api.png" alt="Picture" width="80%" height="100%" style=" display: >block; margin: 20 auto;"/></p>
+![image](./imgs/stac-api.png)
 
 The dedicated STAC API endpoint can also be accessed via Jupyter Notebook by providing the appropriate authorisation `headers`. 
 

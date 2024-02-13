@@ -3,25 +3,25 @@
 
 On the JupyterLab dashboard, click on the `mlflow` Logo.
 
-<p align="left" ><img src="../../images/mlflow_icon.png" alt="Picture" width="100" height="100"style=" display: block; margin: 20 auto;"/></p>
+![image](./imgs/mlflow_icon.png)
 
 The `MLflow` dashboard will appear.
 
-<p align="left" ><img src="../../images/mlflow_dashboard.png" alt="Picture" width="80%"style=" display: block; margin: 20 auto;"/></p>
+![image](./imgs/mlflow_dashboard.png)
 
 Below are a few examples of using `MLflow` in a ML project workflow:
 * The user can select one or multiple runs to **Compare**
 
-<p align="left" ><img src="../../images/selectrun.png" alt="Picture" width="60%" height="100%"style=" display: >block; margin: 20 auto;"/></p>
+![image](./imgs/selectrun.png)
 
 * The user can see a quick overview of each run and select which parameter(s) to analyse and plot on the graph
 
-<p align="left" ><img src="../../images/rundetails.png" alt="Picture" width="60%" height="100%" style=" display: >block; margin: 20 auto;"/></p>
-       
+![image](./imgs/rundetails.png)
+
 * The user compares different parameteres fed to the CNN model
 
-<p align="left" ><img src="../../images/parameters.png" alt="Picture" width="60%" height="100%"style=" display: >block; margin: 20 auto;"/></p> 
+![image](./imgs/parameters.png)
 
 * The user compares evaluation metrics of each run, to opt for the best model for his/her application. 
 
-<p align="left" ><img src="../../images/metrics.png" alt="Picture" width="60%" height="100%"style=" >display: >block; margin: 20 auto;"/></p>        
+![image](./imgs/metrics.png)
