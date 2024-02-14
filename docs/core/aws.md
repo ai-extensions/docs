@@ -1,5 +1,5 @@
-# Access to AWS s3
-A dedicated Amazon S3 storage is pre-configured to be accessed from the App Hub. This can be done with the Amazon Web Server (AWS) `aws s3` commands in the AWS CLI.
+# Access to object storage
+A dedicated object storage (in this example Amazon S3) is pre-configured to be accessed from the App Hub. This can be done with the Amazon Web Server (AWS) `aws s3` commands in the AWS CLI.
 
 For example, to list the content of a specific S3 bucket, you can use the command below.
 ```

@@ -21,16 +21,27 @@ plugins:
   - mkdocs-jupyter
 
 nav:
-  - ESA AI-Extensions App Hub:
+  - Overview: 'index.md'
+  - AI-Extensions:
     - intro/foreword.md
     - intro/registration.md
-  - App Hub Core Services:
-    - core/jupyterhub.md
-    - core/qgis.md
-    - core/stac.md
-  - Solutions hosted on JupyterHub:
-    - solutions/jupyterlab.md
-    - solutions/codeserver.md
-    - solutions/mlflow.md
-    - solutions/aws.md
-  - Archive: 'index.md'
+  - ML-Lab:
+    - core/jupyterlab.md
+    - core/codeserver.md
+    - core/mlflow.md
+    - core/aws.md
+  - Additional Apps:
+    - plus/jupyterhub.md
+    - plus/qgis.md
+    - plus/stac.md
+  - User Scenarios:
+    - scenarios/scenario1.md
+    - scenarios/scenario2.md
+    - scenarios/scenario3.md
+    - scenarios/scenario4.md
+    - scenarios/scenario5.md
+    - scenarios/scenario6.md
+    - scenarios/scenario7.md
+    - scenarios/scenario8.md
+    - scenarios/scenario9.md
+    - scenarios/scenario10.md

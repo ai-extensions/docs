@@ -1,20 +1,20 @@
 # AI-Extension Application Hub - User Manual 
 
 ## Purpose
-
 The AI-Extensions project aims at supporting the Earth Science and Services Communities by expanding the existing Earth Observation (EO) platform offerings services with operationally mature AI/ML software capabilities. This is achieved through the AI-Extension Application Hub, a dedicated Cloud platform that provides the integration and operational implementation of EO and AI capabilities.  
 
-This User Manual provides a guideline, as well as step-by-step instructions, for developers and consumers to effectively leverage the AI-Extension Application Hub. 
+This User Manual provides a guideline, as well as step-by-step instructions, for developers and consumers to effectively leverage the AI-Extension Application Hub ML-Lab. 
 
-## Registration
+## Core Services
 
-* App Hub URL: [https://app-hub-ai-extensions-dev.terradue.com/](https://app-hub-ai-extensions-dev.terradue.com/)
-* User Registration: *add steps - link to configuration.md file?!*
-* JupyterHub - Server Options: different server options can be configured for your username. These will be visible on the JupyterHub dashboard after login. In the example shown below, a few server options are available. You can select one (e.g. "**Machine Learning Lab 0.10 Large (12GB RAM)**") and then click on `Start` to launch it. 
+### Additional Apps
+- QGIS 
+- STAC
 
-![image](./core/imgs/jupyterhub_login_ALL.png)
+## User Scenarios
 
-## Applications
+## User Showcases
+
 
 ### JupyterLab
 JupyterLab is an interactive development environment that enables users to create and share documents that contain live code, visualisation and other content. With its flexible and extensible architecture, JupyterLab provides a seamless interface for data science workflows, allowing users to explore, analyze, and collaborate on data-driven projects effortlessly. 

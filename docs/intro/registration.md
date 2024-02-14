@@ -1,5 +1,7 @@
 # Registration
 
+**Note**: while being under development, the registration to the ML-Lab is for early-adopters users only, working and testing dedicated Showcases.
+
 ## Create a user account
 1. Create an account and register on Terradue portal  your account https://www.terradue.com/portal/signup. Please note not to use special characters (including -, ., _, etc) for the username, but only just letters and numbers. 
 2. Check your mailbox. We have sent you a confirmation email in order to validate your user email address. Click on the link to complete registration process.
