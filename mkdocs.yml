@@ -21,7 +21,7 @@ plugins:
   - mkdocs-jupyter
 
 nav:
-  - Overview: 'index.md'
+  - Summary: 'index.md'
   - AI-Extensions:
     - intro/foreword.md
     - intro/registration.md
