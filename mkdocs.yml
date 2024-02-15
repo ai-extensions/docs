@@ -33,8 +33,8 @@ nav:
     - 2-core/5-codeserver.md
     - 2-core/6-aws.md
   - Additional Apps:
-    - plus/qgis.md
-    - plus/stac.md
+    - 3-plus/qgis.md
+    - 3-plus/stac.md
   - User Scenarios:
     - scenarios/scenario1.md
     - scenarios/scenario2.md
