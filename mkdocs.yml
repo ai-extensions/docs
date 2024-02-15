@@ -23,15 +23,15 @@ plugins:
 nav:
   - Summary: 'index.md'
   - AI-Extensions:
-    - intro/foreword.md
-    - intro/registration.md
+    - 1-intro/1-foreword.md
+    - 1-intro/2-registration.md
   - ML-Lab:
-    - core/1-intro.md
-    - core/2-jupyterhub.md
-    - core/3-mlflow.md
-    - core/4-jupyterlab.md
-    - core/5-codeserver.md
-    - core/6-aws.md
+    - 2-core/1-intro.md
+    - 2-core/2-jupyterhub.md
+    - 2-core/3-mlflow.md
+    - 2-core/4-jupyterlab.md
+    - 2-core/5-codeserver.md
+    - 2-core/6-aws.md
   - Additional Apps:
     - plus/qgis.md
     - plus/stac.md
