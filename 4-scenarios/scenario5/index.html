@@ -959,18 +959,18 @@
 <li>Fine-tune the ML model by adjusting hyperparameters, modifying the architecture, or incorporating regularization techniques, as needed. This step may be repeated several times to reach the best performance and log the impact of each adjustment on the performance of the output model. </li>
 <li>Use MLflow Tracking tools (e.g. autolog functionality) to log relevant information such as hyperparameters, model configurations, training metrics, model weights, and evaluation results using MLflow APIs. </li>
 </ul>
-<p>The link to this Notebook is: ​​https://github.com/ai-extensions/notebooks/blob/main/scenario-5/trials/s5-newMLModel.ipynb.</p>
+<p>The link to this Notebook is: ​<a href="​https://github.com/ai-extensions/notebooks/blob/main/scenario-5/trials/s5-newMLModel.ipynb">​https://github.com/ai-extensions/notebooks/blob/main/scenario-5/trials/s5-newMLModel.ipynb</a>.</p>
 <h2 id="notebook-for-implementation-of-eurosat-dataset-stac">Notebook for <strong>“Implementation of EuroSAT dataset STAC”</strong></h2>
-<p>The EuroSAT dataset is based on ESA's Sentinel-2 data, covering 13 spectral bands and consisting out of 10 classes with a total of 27,000 labeled and geo-referenced images (https://github.com/phelber/EuroSAT). This Notebook was used to create a STAC Catalog, a STAC Collection, and STAC Items for the entire EuroSAT dataset. Each STAC Item was generated with three assets: the EuroSAT's georeferenced patches (in .tif format), their labels (in .geojson format), and their RGB-composite thumbnails (in .jpeg format). These STAC objects were posted into ESA-AI dedicated S3 bucket (s3://ai-ext-bucket-dev/), and subsequently posted on the ESA-AI dedicated STAC endpoint (https://ai-extensions-stac.terradue.com). </p>
+<p>The EuroSAT dataset is based on ESA's Sentinel-2 data, covering 13 spectral bands and consisting out of 10 classes with a total of 27,000 labeled and geo-referenced images (<a href="https://github.com/phelber/EuroSAT">https://github.com/phelber/EuroSAT</a>). This Notebook was used to create a STAC Catalog, a STAC Collection, and STAC Items for the entire EuroSAT dataset. Each STAC Item was generated with three assets: the EuroSAT's georeferenced patches (in .tif format), their labels (in <code>.geojson</code> format), and their RGB-composite thumbnails (in <code>.jpeg</code> format). These STAC objects were posted into ESA-AI dedicated S3 bucket (s3://ai-ext-bucket-dev/), and subsequently posted on the ESA-AI dedicated STAC endpoint (<a href="https://ai-extensions-stac.terradue.com">https://ai-extensions-stac.terradue.com</a>). </p>
 <p>The requirements that were included in this Notebook are:</p>
 <ul>
 <li>Import Libraries (e.g., <code>pystac</code>, <code>torchgeo</code>).</li>
 <li>Load the EuroSAT/EuroSAT100 Dataset using the torchgeo API. </li>
 <li>Generate STAC objects (STAC catalog, STAC collection, and STAC Item) with their corresponding characteristics, namely, id, properties, assets, STAC extensions, etc., using pystac standard conventions and place them in a .json file. The class label for each patch of data is stored in a <code>.geojson</code> file format.</li>
 <li>Post the generated STAC objects into the S3 bucket s3://ai-ext-bucket-dev.</li>
-<li>Publish all STAC items into the dedicated collection “EUROSAT_2024_dataset” in the STAC endpoint (https://ai-extensions-stac.terradue.com), and then validate by checking the published items.</li>
+<li>Publish all STAC items into the dedicated collection “EUROSAT_2024_dataset” in the STAC endpoint (<a href="https://ai-extensions-stac.terradue.com">https://ai-extensions-stac.terradue.com</a>), and then validate by checking the published items.</li>
 </ul>
-<p>The link to the Notebook for User Scenario 5 is: https://github.com/ai-extensions/notebooks/blob/main/scenario-5-stac-dataloader/s5-stac-dataloder.ipynb. </p>
+<p>The link to the Notebook for User Scenario 5 is: <a href="https://github.com/ai-extensions/notebooks/blob/main/scenario-5-stac-dataloader/s5-stac-dataloder.ipynb">https://github.com/ai-extensions/notebooks/blob/main/scenario-5-stac-dataloader/s5-stac-dataloder.ipynb</a>. </p>
 
 
 
