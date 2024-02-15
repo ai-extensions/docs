@@ -11,4 +11,4 @@ Query and retrieving the Data using specific parameters to filter out retrieved 
 * Perform analysis on the EO data labels to gain insights and understand patterns. This includes tasks such as calculating statistical summaries, generating histograms or scatter plots, as well as making correlation matrix for understanding relationships between variables.
 * Document and share of results and findings of the EDA process by exporting charts and visualisation plots into a report.
 
-The link to the Notebook for User Scenario 1 is: https://github.com/ai-extensions/notebooks/blob/main/scenario-1/s1-eda.ipynb
+The link to the Notebook for User Scenario 1 is: [https://github.com/ai-extensions/notebooks/blob/main/scenario-1/s1-eda.ipynb](https://github.com/ai-extensions/notebooks/blob/main/scenario-1/s1-eda.ipynb)
