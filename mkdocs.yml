@@ -26,12 +26,12 @@ nav:
     - intro/foreword.md
     - intro/registration.md
   - ML-Lab:
-    - core/intro.md
-    - core/jupyterhub.md
-    - core/mlflow.md
-    - core/jupyterlab.md
-    - core/codeserver.md
-    - core/aws.md
+    - core/1-intro.md
+    - core/2-jupyterhub.md
+    - core/3-mlflow.md
+    - core/4-jupyterlab.md
+    - core/5-codeserver.md
+    - core/6-aws.md
   - Additional Apps:
     - plus/qgis.md
     - plus/stac.md
