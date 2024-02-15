@@ -11,10 +11,8 @@
       
       
       
-        <link rel="prev" href="../../2-core/6-aws/">
+        <link rel="prev" href="../scenario4/">
       
-      
-        <link rel="next" href="../scenario2/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +20,7 @@
     
     
       
-        <title>User Scenario 1 - Alice does Exploratory Data Analysis (EDA) - ESA AI-Extensions App Hub User Manual</title>
+        <title>User Scenario 5 - Alice develops a new Machine Learning model - ESA AI-Extensions App Hub User Manual</title>
       
     
     
@@ -64,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#user-scenario-1-alice-does-exploratory-data-analysis-eda" class="md-skip">
+        <a href="#user-scenario-5-alice-develops-a-new-machine-learning-model" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              User Scenario 1 - Alice does Exploratory Data Analysis (EDA)
+              User Scenario 5 - Alice develops a new Machine Learning model
             
           </span>
         </div>
@@ -607,19 +605,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../scenario1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -628,7 +617,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -662,11 +650,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../scenario3.md" class="md-nav__link">
+      <a href="../scenario3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    None
+    User Scenario 3 - Alice describes the labelled Earth Observation data
   </span>
   
 
@@ -683,11 +671,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../scenario4.md" class="md-nav__link">
+      <a href="../scenario4/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    None
+    User Scenario 4 - Alice discovers labelled Earth Observation data
   </span>
   
 
@@ -701,18 +689,76 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../scenario5.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    User Scenario 5 - Alice develops a new Machine Learning model
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    None
+    User Scenario 5 - Alice develops a new Machine Learning model
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#notebook-for-alice-develops-a-new-machine-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notebook for “Alice develops a new machine learning”
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notebook-for-implementation-of-eurosat-dataset-stac" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notebook for “Implementation of EuroSAT dataset STAC”
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -850,6 +896,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#notebook-for-alice-develops-a-new-machine-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notebook for “Alice develops a new machine learning”
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notebook-for-implementation-of-eurosat-dataset-stac" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notebook for “Implementation of EuroSAT dataset STAC”
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -866,16 +938,37 @@
   
 
 
-<h1 id="user-scenario-1-alice-does-exploratory-data-analysis-eda">User Scenario 1 - Alice does Exploratory Data Analysis (EDA)</h1>
-<p>The purpose of Explaratory Data Analysis (EDA) is to analyse the data that will be used to train and evaluate Machine Learning models. In this Notebook are firstly shown the steps to access and visualize EO data (e.g. Sentinel-2 scenes) and their metadata using STAC API. Secondly, a pre-arranged DataFrame containing labeled geospatial data with reflectance values and vegetation indices is loaded and used for the purpose of EDA.</p>
-<p>The requirements defined in the User Scenario 1 that were included in this Notebook are:
-* Import Libraries for data manipulation (e.g. <code>pandas</code>), visualisation (e.g. <code>matplotlib</code>, <code>seaborn</code>), geospatial analysis (e.g <code>rasterio</code>).
-* Connect to STAC API for accessing Sentinel-2 data and their metadata, as well as DataFrames that contain labelled geospatial data, using appropriate authentication credentials.
-Query and retrieving the Data using specific parameters to filter out retrieved data (e.g time range, spatial extent, cloud cover).
-* Visualising data (eg. S-2 metadata, spectral bands) and charts / graphs of the analysed relevant information (e.g. with <code>matplotlib</code>, <code>seaborn</code>). These are useful for gaining information about the data and for performing other tasks such as band combination, cloud masking, etc.
-* Perform analysis on the EO data labels to gain insights and understand patterns. This includes tasks such as calculating statistical summaries, generating histograms or scatter plots, as well as making correlation matrix for understanding relationships between variables.
-* Document and share of results and findings of the EDA process by exporting charts and visualisation plots into a report.</p>
-<p>The link to the Notebook for User Scenario 1 is: https://github.com/ai-extensions/notebooks/blob/main/scenario-1/s1-eda.ipynb</p>
+<h1 id="user-scenario-5-alice-develops-a-new-machine-learning-model">User Scenario 5 - Alice develops a new Machine Learning model</h1>
+<p>During the implementation of this Scenario, two Notebooks were developed:</p>
+<ul>
+<li><strong>“Alice develops a new machine learning”</strong> Notebook: this is the main Notebook for Scenario 5, as it follows the requirements for Scenario 5 described in the Service Specification document. </li>
+<li><strong>“Implementation of EuroSAT STAC dataset”</strong> Notebook: the objective of this Notebook was to generate STAC Catalog, Collection and Items of the EuroSAT dataset. The EuroSAT STAC dataset was then used as input dataset for developing and testing the main <strong>“Alice develops a new machine learning”</strong> Notebook. </li>
+</ul>
+<h2 id="notebook-for-alice-develops-a-new-machine-learning">Notebook for <strong>“Alice develops a new machine learning”</strong></h2>
+<p>The AI-user employs MLflow Tracking as a crucial tool throughout the ML model development cycle. It ensures effective log tracking and preserves vital information, including specific code versions, datasets used, and model hyperparameters. By logging this information, the reproducibility of the work drastically increases, enabling users to revisit and replicate past experiments accurately. Moreover, quality metrics have been tracked during the task, such as classification accuracy, loss function fluctuations, and inference time, enabling easy comparison between different models.</p>
+<p>A pivotal component of the platform is the Model Registry, which is seamlessly integrated with the experiment tracking functionality. The Model Registry acts as a central repository, allowing the user to manage and oversee their models effectively. This preservation of trained models is of significant economic importance, as training a model often requires substantial time and computing resources.</p>
+<p>The requirements defined in the User Scenario 5 that were included in this Notebook are:</p>
+<ul>
+<li>Import Libraries (e.g. <code>tensorflow</code>, <code>mlflow</code>, <code>sklearn</code>)</li>
+<li>Clarify the specific problem, identify the input data, and provide a pipeline for data ingestion. This ensures training a high-resolution classifier.</li>
+<li>Design the model architecture with the advantage of Convolutional Neural Networks (CNNs). The architecture may encompass different hidden layers with a variety of activation functions (such as <em>ReLU, Sigmoid, tanh</em>) and a couple of techniques that enhance the stability and reliability of the model, such as Batch Normalization and Regularization (namely Dropout).</li>
+<li>Train the model using the EuroSAT STAC training dataset and evaluate the performance of the trained model on the test dataset. </li>
+<li>Evaluate the ML model with evaluation metrics such as accuracy, precision, recall, F1 score, and the confusion matrix, in order to determine the model's effectiveness.</li>
+<li>Fine-tune the ML model by adjusting hyperparameters, modifying the architecture, or incorporating regularization techniques, as needed. This step may be repeated several times to reach the best performance and log the impact of each adjustment on the performance of the output model. </li>
+<li>Use MLflow Tracking tools (e.g. autolog functionality) to log relevant information such as hyperparameters, model configurations, training metrics, model weights, and evaluation results using MLflow APIs. </li>
+</ul>
+<p>The link to this Notebook is: ​​https://github.com/ai-extensions/notebooks/blob/main/scenario-5/trials/s5-newMLModel.ipynb.</p>
+<h2 id="notebook-for-implementation-of-eurosat-dataset-stac">Notebook for <strong>“Implementation of EuroSAT dataset STAC”</strong></h2>
+<p>The EuroSAT dataset is based on ESA's Sentinel-2 data, covering 13 spectral bands and consisting out of 10 classes with a total of 27,000 labeled and geo-referenced images (https://github.com/phelber/EuroSAT). This Notebook was used to create a STAC Catalog, a STAC Collection, and STAC Items for the entire EuroSAT dataset. Each STAC Item was generated with three assets: the EuroSAT's georeferenced patches (in .tif format), their labels (in .geojson format), and their RGB-composite thumbnails (in .jpeg format). These STAC objects were posted into ESA-AI dedicated S3 bucket (s3://ai-ext-bucket-dev/), and subsequently posted on the ESA-AI dedicated STAC endpoint (https://ai-extensions-stac.terradue.com). </p>
+<p>The requirements that were included in this Notebook are:</p>
+<ul>
+<li>Import Libraries (e.g., <code>pystac</code>, <code>torchgeo</code>).</li>
+<li>Load the EuroSAT/EuroSAT100 Dataset using the torchgeo API. </li>
+<li>Generate STAC objects (STAC catalog, STAC collection, and STAC Item) with their corresponding characteristics, namely, id, properties, assets, STAC extensions, etc., using pystac standard conventions and place them in a .json file. The class label for each patch of data is stored in a <code>.geojson</code> file format.</li>
+<li>Post the generated STAC objects into the S3 bucket s3://ai-ext-bucket-dev.</li>
+<li>Publish all STAC items into the dedicated collection “EUROSAT_2024_dataset” in the STAC endpoint (https://ai-extensions-stac.terradue.com), and then validate by checking the published items.</li>
+</ul>
+<p>The link to the Notebook for User Scenario 5 is: https://github.com/ai-extensions/notebooks/blob/main/scenario-5-stac-dataloader/s5-stac-dataloder.ipynb. </p>
 
 
 
