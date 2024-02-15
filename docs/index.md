@@ -3,142 +3,31 @@
 ## Purpose
 The AI-Extensions project aims at supporting the Earth Science and Services Communities by expanding the existing Earth Observation (EO) platform offerings services with operationally mature AI/ML software capabilities. This is achieved through the AI-Extension Application Hub, a dedicated Cloud platform that provides the integration and operational implementation of EO and AI capabilities.  
 
-This User Manual provides a guideline, as well as step-by-step instructions, for developers and consumers to effectively leverage the AI-Extension Application Hub ML-Lab. 
+This User Manual provides a guideline, as well as step-by-step instructions, for developers and consumers to effectively leverage the AI-Extension ML-Lab. 
 
 ## Core Services
+The Application Hub ML-Lab service leverages **JupyterHub** as an Application Hub to manage and deploy various web applications, including **MLflow**, **JupyterLab**, **Code Server**, **QGIS Remote Desktop**, and **STAC Browser**. **JupyterHub** acts as a central platform, facilitating the launching and management of these applications, providing a seamless and integrated experience for our users.
 
-### Additional Apps
-- QGIS 
-- STAC
+* **JupyterHub**: JupyterHub is a dedicated multi-user server that brings the power of JupyterLab to collaborative environments. It allows organizations to effortlessly deploy and manage Jupyter Notebook servers for multiple users, enabling seamless collaboration and resource sharing in data science and research settings. 
+* **MLflow**: MLflow is an open-source platform for managing the ML lifecycle. MLflow provides tools and functionalities to track experiments, package models, version models, model hyperparameters, packaging code into reproducible runs, deploy models, monitor performance, and enable collaboration among team members. MLflow enables users to effectively organize and monitor their ML projects, enabling collaboration, reproducibility, and streamlined deployment workflows.
+* **JupyterLab**: JupyterLab is a powerful and flexible web-based Integrated Development Environment (IDE) for data analysis, model development, and interactive scientific computing. With JupyterLab, our users can write and execute code, visualise data, and create rich, interactive notebooks, enabling efficient experimentation and exploration of their data. With its flexible and extensible architecture, JupyterLab provides a seamless interface for data science workflows, allowing AI-users to explore, analyze, and collaborate on data-driven projects effortlessly. 
+* **Code Server**: Code Server enables users to run Visual Studio Code (VS Code), a lightweight and versatile source code editor that combines the simplicity of a text editor with powerful developer tools, providing an intuitive and customizable environment for coding across various programming languages. With Code Server, VS Code and all its functionalities are available directly from the Application Hub server. 
+* **QGIS Remote Desktop**: a remote desktop environment with QGIS, a widely-used free and open-source application for viewing, editing, and analysing geo-spatial data. It provides a versatile platform equipped with tools to perform spatial analysis, geoprocessing, visualise geospatial data, enhancing their labelling and analysis tasks. This integration empowers AI-users to leverage QGIS's extensive capabilities directly from their web browser for making informed decisions based on geographic data.
+* **STAC Browser**: The SpatioTemporal Asset Catalog (STAC) is a powerful standard for describing geospatial data, so it can be more easily worked with, indexed, discovered and shared. As part of the Application Hub, the system integrates the STAC Browser, which allows AI-users to discover and explore EO data and training datasets. The STAC Browser supports easy search and retrieval of relevant EO data through the STAC standard, enabling efficient data discovery and selection for ML tasks.
 
 ## User Scenarios
+* User Scenario 1 - Alice does Exploratory Data Analysis (EDA): The purpose of Explaratory Data Analysis (EDA) is to analyse the data that will be used to train and evaluate Machine Learning models. In this Notebook are firstly shown the steps to access and visualize EO data (e.g. Sentinel-2 scenes) and their metadata using STAC API. Secondly, a pre-arranged DataFrame containing labeled geospatial data with reflectance values and vegetation indices is loaded and used for the purpose of EDA.
+* User Scenario 2 - Alice labels Earth Observation data: Labelling data is a crucial step in the process for developing supervised Machine Learning (ML) models. It involves the critical task of assigning relevant labels or categories to different features within the data, such as land cover class (e.g. vegetation, water bodies, urban area, etc.) or other physical characteristics of the Earth's surface. These labels can be binary (e.g., water or non-water) or multi-class (e.g., forest, grassland, urban).
+* User Scenario 3 - Alice describes the labelled Earth Observation data: Labeled Earth Observation (EO) data can be described using the SpatioTemporal Asset Catalog (STAC) standard. This allows to describe the labeled EO data while defining standardized sets of metadata to delineate its key properties, such as spatial and temporal extents, resolution, and other pertinent characteristics. Additionally, it enables the user to include details about the labeling process itself, as well as enabling specific parameters-driven queries on the catalog.
+* User Scenario 4 - Alice discovers labelled Earth Observation data: This Scenario documents the process for discovering labelled EO data described with the STAC standard. One of the notable advantages of the STAC-supported catalogs is the ability to filter search results using STAC metadata. This empowers the user to narrow down the search based on specific labeling criteria. By applying such filters, the user can pinpoint the datasets that align with the specific requirements.
+* User Scenario 5 - Alice develops a new Machine Learning model: During the implementation of this Scenario, two Notebooks were developed:
+  * **“Alice develops a new machine learning”** Notebook: this is the main Notebook for Scenario 5, as it follows the requirements for Scenario 5 described in the Service Specification document. 
+  * **“Implementation of EuroSAT STAC dataset”** Notebook: the objective of this Notebook was to generate STAC Catalog, Collection and Items of the EuroSAT dataset. The EuroSAT STAC dataset was then used as input dataset for developing and testing the main **“Alice develops a new machine learning”** Notebook. 
+* User Scenario 6 - Alice starts a training job on a remote
+* User Scenario 7 ​- Alice describes her trained machine learning model
+* User Scenario 8 -​ Alice reuses an existing pre-trained model
+* User Scenario 9 - Alice creates a training dataset
+* User Scenario 10 - Eric discovers a model and consumes it
 
 ## User Showcases
 
-
-### JupyterLab
-JupyterLab is an interactive development environment that enables users to create and share documents that contain live code, visualisation and other content. With its flexible and extensible architecture, JupyterLab provides a seamless interface for data science workflows, allowing users to explore, analyze, and collaborate on data-driven projects effortlessly. 
-Link to the official documentation: https://jupyter.org/. 
-
-After loading up, the JupyterLab dashboard will appear. 
-
-![image](./solutions/imgs/jupyterlab_dashboard.png)
-
-
-### Code Server
-Code Server enables the user to run Visual Studio Code (VS Code), a lightweight and versatile source code editor that combines the simplicity of a text editor with powerful developer tools, providing an intuitive and customizable environment for coding across various programming languages. With Code Server, VS Code and all its functionalities are available directly from the Application Hub server. Link to the official documentation: https://code.visualstudio.com/docs/remote/vscode-server. 
-
-On the JupyterLab dashboard, click on the Code Server Logo.
-
-![image](./solutions/imgs/codeserver_icon.png)
-
-
-The Code Server dashboard will appear.
-
-![image](./solutions/imgs/codeserver_dashboard.png)
-
-
-You have access of all these functionalities from the vertical panel in the top-left corner of the dashboard:
-* **Menu**: access functions and settings within VS Code
-* **Explore**: navigate and manage files and directories in your workspace 
-* **Search**: find specific files, text, or symbols within your workspace
-* **Source Control**: manage version control system such as Git directly within VS Code
-* **Run and Debug**: execute and debug code with built-in tools
-* **Extensions**: enhance functionality by installing and managing extensions to support the development workflow 
-* **Test**: run tests and view test outptus 
-
-### ML-Flow
-`MLflow` is a powerful open-source platform that simplifies the end-to-end machine learning (ML) lifecycle management. It provides tools for tracking experiments, model hyperparameters, packaging code into reproducible runs, and sharing and deploying models across different environments seamlessly. `MLflow` enables users to effectively organize and monitor their ML projects, enabling collaboration, reproducibility, and streamlined deployment workflows. Link to the official documentation: https://mlflow.org/.
-
-On the JupyterLab dashboard, click on the `mlflow` Logo.
-
-![image](./solutions/imgs/mlflow_icon.png)
-
-
-The `MLflow` dashboard will appear.
-
-![image](./solutions/imgs/mlflow_dashboard.png)
-
-
-Below are a few examples of using `MLflow` in a ML project workflow:
-* The user can select one or multiple runs to **Compare**
-
-![image](./solutions/imgs/selectrun.png)
-
-
-* The user can see a quick overview of each run and select which parameter(s) to analyse and plot on the graph
-
-![image](./solutions/imgs/rundetails.png)
-
-       
-* The user compares different parameteres fed to the CNN model
-
-![image](./solutions/imgs/parameters.png)
-
-
-* The user compares evaluation metrics of each run, to opt for the best model for his/her application. 
-
-![image](./solutions/imgs/metrics.png)
-
-
-### QGIS
-QGIS is a free and open-source application for viewing, editing, and analysing geo-spatial data. It provides a versatile platform equipped with tools for spatial analysis, geoprocessing, and map production, empowering users to make informed decisions based on geographic data. Link to the official documentation: https://qgis.org/it/site/. 
-
-The QGIS-dedicated platform can be launched from the JupyterHub dashboard login page. When asked which Server Option to launch, select "**QGIS (includes tooling and plugings v0.4 aws)**" and then Start to launch it. 
-
-![image](./core/imgs/login_choice_QGIS.png)
-
-
-QGIS can then be launched by opening a terminal, typing `qgis` and executing it. The QGIS window will be displayed.
-![image](./core/imgs/qgis.png)
-
-
-
-## Functionalities 
-### Connection to STAC API
-The SpatioTemporal Asset Catalog (STAC) is a powerful standard for describing geospatial data, so it can be more easily worked with, indexed, discovered and shared. Link to the official documentation: https://stacspec.org/en. 
-
-The dedicated STAC Browser app can be launched at login with the option "**STAC Browser for AI-Extensions STAC API**".
-
-![image](./core/imgs/login_choice_STAC.png)
-
-
-After login, the STAC Browser dashboard will appear, showing the existing collections, which you can browse and visualise. 
-
-![image](./core/imgs/stac-api.png)
-
-
-The dedicated STAC API endpoint can also be accessed via Jupyter Notebook by providing the appropriate authorisation `headers`. 
-
-```
-payload = {
-    "client_id": "ai-extensions",
-    "username": "ai-extensions-user",
-    "password": os.environ.get("IAM_PASSWORD"),
-    "grant_type": "password",
-}
-
-token = get_token(url=os.environ.get("IAM_URL"), **payload)
-del(payload)
-headers = {"Authorization": f"Bearer {token}"}
-
-cat = Client.open("https://ai-extensions-stac.terradue.com", headers=headers, ignore_conformance=True)
-```
-To show the available collections in the Catalog.
-```
-[c for c in cat.get_collections()]
-
-[<CollectionClient id=ai-extensions-svv-dataset-labels>,
- <CollectionClient id=sentinel-s2-l2a-cogs>,
- <CollectionClient id=EUROSAT_2024_dataset>,
- <CollectionClient id=gisat-col>]
-```
-
-### Access to AWS s3
-A dedicated Amazon S3 storage is pre-configured to be accessed from the App Hub. This can be done with the Amazon Web Server (AWS) `aws s3` commands in the AWS CLI.
-
-For example, to list the content of a specific S3 bucket, you can use the command below.
-```
-aws s3 ls <bucket_name>
-```
-Other examples with full syntax on using the `aws s3` command are described in the official [AWS website](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html).
