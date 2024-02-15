@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../5-codeserver/">
+        <link rel="prev" href="../scenario8/">
       
       
-        <link rel="next" href="../../3-plus/1-qgis/">
+        <link rel="next" href="../scenario10/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Access to Object Storage - ESA AI-Extensions App Hub User Manual</title>
+        <title>User Scenario 9 - Alice creates a training dataset - ESA AI-Extensions App Hub User Manual</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#access-to-object-storage" class="md-skip">
+        <a href="#user-scenario-9-alice-creates-a-training-dataset" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Access to Object Storage
+              User Scenario 9 - Alice creates a training dataset
             
           </span>
         </div>
@@ -318,19 +318,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -344,7 +342,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             ML-Lab
@@ -358,7 +356,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../1-intro/" class="md-nav__link">
+      <a href="../../2-core/1-intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -379,7 +377,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../2-jupyterhub/" class="md-nav__link">
+      <a href="../../2-core/2-jupyterhub/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -400,7 +398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../3-mlflow/" class="md-nav__link">
+      <a href="../../2-core/3-mlflow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -421,7 +419,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../4-jupyterlab/" class="md-nav__link">
+      <a href="../../2-core/4-jupyterlab/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -442,7 +440,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../5-codeserver/" class="md-nav__link">
+      <a href="../../2-core/5-codeserver/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -460,30 +458,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Access to Object Storage
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../2-core/6-aws/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -492,44 +470,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Introduction
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#practical-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Practical Example
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -630,17 +570,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -654,7 +596,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             User Scenarios
@@ -668,7 +610,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../4-scenarios/scenario1/" class="md-nav__link">
+      <a href="../scenario1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -689,7 +631,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../4-scenarios/scenario2/" class="md-nav__link">
+      <a href="../scenario2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -710,7 +652,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../4-scenarios/scenario3/" class="md-nav__link">
+      <a href="../scenario3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -731,7 +673,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../4-scenarios/scenario4/" class="md-nav__link">
+      <a href="../scenario4/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -752,7 +694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../4-scenarios/scenario5/" class="md-nav__link">
+      <a href="../scenario5/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -773,7 +715,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../4-scenarios/scenario6/" class="md-nav__link">
+      <a href="../scenario6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -794,7 +736,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../4-scenarios/scenario7/" class="md-nav__link">
+      <a href="../scenario7/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -815,7 +757,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../4-scenarios/scenario8/" class="md-nav__link">
+      <a href="../scenario8/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -833,10 +775,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../4-scenarios/scenario9/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -845,6 +796,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -857,7 +809,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../4-scenarios/scenario10/" class="md-nav__link">
+      <a href="../scenario10/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -898,32 +850,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Introduction
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#practical-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Practical Example
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -940,14 +866,8 @@
   
 
 
-<h1 id="access-to-object-storage">Access to Object Storage</h1>
-<h2 id="introduction">Introduction</h2>
-<p>A dedicated object storage (in this example Amazon S3) is pre-configured to be accessed from the App Hub. This can be done with the Amazon Web Server (AWS) <code>aws s3</code> commands in the AWS CLI.</p>
-<h2 id="practical-example">Practical Example</h2>
-<p>For example, to list the content of a specific S3 bucket, you can use the command below.
-<div class="highlight"><pre><span></span><code>aws s3 ls &lt;bucket_name&gt;
-</code></pre></div>
-Other examples with full syntax on using the <code>aws s3</code> command are described in the official <a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html">AWS website</a>.</p>
+<h1 id="user-scenario-9-alice-creates-a-training-dataset">User Scenario 9 - Alice creates a training dataset</h1>
+<p><em>This has not been implemented yet, it's work in progress...</em></p>
 
 
 
