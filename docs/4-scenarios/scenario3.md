@@ -9,4 +9,4 @@ The requirements defined in the User Scenario 3 are:
 * Create a STAC Item for each labelled EO data, including relevant metadata and STAC Extensions to describe the labelled data (e.g. the `stac-extensions/label extension` to provide detailed labelling information, or the `stac-extensions/asset` to associate assets or additional files with the labelled data).
 * Extract metadata of the created STAC item, and show its relevant information, including visualisation on spatial map.
 
-The link to the Notebook for User Scenario 3 is: ​​https://github.com/ai-extensions/notebooks/blob/main/scenario-3/s3-describingEOdata.ipynb.
+The link to the Notebook for User Scenario 3 is: ​[​https://github.com/ai-extensions/notebooks/blob/main/scenario-3/s3-describingEOdata.ipynb](​https://github.com/ai-extensions/notebooks/blob/main/scenario-3/s3-describingEOdata.ipynb).

@@ -12,4 +12,4 @@ The requirements defined in the User Scenario 4 are:
 * Examine the search results to explore the available labeled EO datasets (view metadata summaries) and identify a dataset that meets the requirements to access associated assets.
 * Depending on the access permissions and licensing, the user identifies labelled EO a dataset stored on AWS S3 bucket and is given the option to either download it or integrate it into the workflow for further analysis or model training.
 
-The link to the Notebook for User Scenario 4 is: ​​https://github.com/ai-extensions/notebooks/blob/main/scenario-4/s4-discoveringLabelledEOData.ipynb.
+The link to the Notebook for User Scenario 4 is: ​[​https://github.com/ai-extensions/notebooks/blob/main/scenario-4/s4-discoveringLabelledEOData.ipynb](​https://github.com/ai-extensions/notebooks/blob/main/scenario-4/s4-discoveringLabelledEOData.ipynb).

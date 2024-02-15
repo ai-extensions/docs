@@ -11,4 +11,4 @@ The requirements defined in the User Scenario 2 are:
 * Validate the labelled data to ensure its accuracy and reliability, comparing it to a reference dataset.
 * Use Labelled Data for Supervised Machine Learning to train models, evaluate their performance, and make predictions on new, unlabeled EO data.
 
-The link to the Notebook for User Scenario 2 is: ​​https://github.com/ai-extensions/notebooks/blob/main/scenario-2/s2-labellingEOdata.ipynb
+The link to the Notebook for User Scenario 2 is: ​[​https://github.com/ai-extensions/notebooks/blob/main/scenario-2/s2-labellingEOdata.ipynb](​https://github.com/ai-extensions/notebooks/blob/main/scenario-2/s2-labellingEOdata.ipynb).
