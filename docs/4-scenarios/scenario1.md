@@ -2,7 +2,8 @@
 
 The purpose of Explaratory Data Analysis (EDA) is to analyse the data that will be used to train and evaluate Machine Learning models. In this Notebook are firstly shown the steps to access and visualize EO data (e.g. Sentinel-2 scenes) and their metadata using STAC API. Secondly, a pre-arranged DataFrame containing labeled geospatial data with reflectance values and vegetation indices is loaded and used for the purpose of EDA.
 
-The requirements defined in the User Scenario 1 that were included in this Notebook are:
+The requirements defined in the User Scenario 1 are:
+
 * Import Libraries for data manipulation (e.g. `pandas`), visualisation (e.g. `matplotlib`, `seaborn`), geospatial analysis (e.g `rasterio`).
 * Connect to STAC API for accessing Sentinel-2 data and their metadata, as well as DataFrames that contain labelled geospatial data, using appropriate authentication credentials.
 Query and retrieving the Data using specific parameters to filter out retrieved data (e.g time range, spatial extent, cloud cover).

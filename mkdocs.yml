@@ -36,13 +36,13 @@ nav:
     - 3-plus/qgis.md
     - 3-plus/stac.md
   - User Scenarios:
-    - scenarios/scenario1.md
-    - scenarios/scenario2.md
-    - scenarios/scenario3.md
-    - scenarios/scenario4.md
-    - scenarios/scenario5.md
-    - scenarios/scenario6.md
-    - scenarios/scenario7.md
-    - scenarios/scenario8.md
-    - scenarios/scenario9.md
-    - scenarios/scenario10.md
+    - 4-scenarios/scenario1.md
+    - 4-scenarios/scenario2.md
+    - 4-scenarios/scenario3.md
+    - 4-scenarios/scenario4.md
+    - 4-scenarios/scenario5.md
+    - 4-scenarios/scenario6.md
+    - 4-scenarios/scenario7.md
+    - 4-scenarios/scenario8.md
+    - 4-scenarios/scenario9.md
+    - 4-scenarios/scenario10.md
