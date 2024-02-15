@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../jupyterhub/">
+        <link rel="prev" href="../../intro/registration/">
       
       
-        <link rel="next" href="../jupyterlab/">
+        <link rel="next" href="../2-jupyterhub/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>ML-Flow - ESA AI-Extensions App Hub User Manual</title>
+        <title>Application Hub ML-Lab - ESA AI-Extensions App Hub User Manual</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ml-flow" class="md-skip">
+        <a href="#application-hub-ml-lab" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ML-Flow
+              Application Hub ML-Lab
             
           </span>
         </div>
@@ -355,10 +355,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../intro/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -367,6 +376,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -379,7 +389,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../jupyterhub/" class="md-nav__link">
+      <a href="../2-jupyterhub/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -397,28 +407,18 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../3-mlflow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    ML-Flow
+    MLflow
   </span>
   
 
       </a>
-      
     </li>
   
 
@@ -431,7 +431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../jupyterlab/" class="md-nav__link">
+      <a href="../4-jupyterlab/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -452,7 +452,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../codeserver/" class="md-nav__link">
+      <a href="../5-codeserver/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -473,7 +473,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws/" class="md-nav__link">
+      <a href="../6-aws/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -866,27 +866,11 @@
   
 
 
-<h1 id="ml-flow">ML-Flow</h1>
-<p><code>MLflow</code> is a powerful open-source platform that simplifies the end-to-end machine learning (ML) lifecycle management. It provides tools for tracking experiments, model hyperparameters, packaging code into reproducible runs, and sharing and deploying models across different environments seamlessly. <code>MLflow</code> enables users to effectively organize and monitor their ML projects, enabling collaboration, reproducibility, and streamlined deployment workflows. Link to the official documentation: https://mlflow.org/.</p>
-<p>On the JupyterLab dashboard, click on the <code>mlflow</code> Logo.</p>
-<p><img alt="image" src="../imgs/mlflow_icon.png" /></p>
-<p>The <code>MLflow</code> dashboard will appear.</p>
-<p><img alt="image" src="../imgs/mlflow_dashboard.png" /></p>
-<p>Below are a few examples of using <code>MLflow</code> in a ML project workflow:
-* The user can select one or multiple runs to <strong>Compare</strong></p>
-<p><img alt="image" src="../imgs/selectrun.png" /></p>
-<ul>
-<li>The user can see a quick overview of each run and select which parameter(s) to analyse and plot on the graph</li>
-</ul>
-<p><img alt="image" src="../imgs/rundetails.png" /></p>
-<ul>
-<li>The user compares different parameteres fed to the CNN model</li>
-</ul>
-<p><img alt="image" src="../imgs/parameters.png" /></p>
-<ul>
-<li>The user compares evaluation metrics of each run, to opt for the best model for his/her application. </li>
-</ul>
-<p><img alt="image" src="../imgs/metrics.png" /></p>
+<h1 id="application-hub-ml-lab">Application Hub ML-Lab</h1>
+<p>The Application Hub is a comprehensive and modular platform delivering Software-as-a-Service (SaaS) products, designed to cater to the diverse and multifaceted needs of the EO community. It is crafted to support a wide array of stakeholders, from developers and service providers integrating cutting-edge algorithms to researchers harnessing computational power, and analysts requiring clear and concise visualisations. At the heart of the Application Hub is the ability to manage the delivery of work environments and tools for a wide range of user tasks, such as develop, host, execute, and perform exploratory analysis of EO applications, all managed within a single, unified Cloud infrastructure.</p>
+<p>The Application Hub, leveraging <strong>Kubernetes</strong> and <strong>JupyterHub</strong>, creates a robust, scalable, and user-centric platform for EO applications and analytics. <strong>Kubernetes</strong> ensures scalable operation of containerized applications by managing deployment, operation, and traffic distribution, while <strong>JupyterHub</strong> orchestrates the launching, scaling, and management of application instances, acting as the primary gateway for user requests. The Hub uses dedicated namespaces for each application pod, ensuring organisation, security, and isolation. It also dynamically configures application pods based on the task, and personalises the experience based on user profiles through Kube Spawner. This design ensures the Application Hub remains modular, scalable, and capable of catering to the dynamic requirements of EO tasks.</p>
+<p>Typically, the Application Hub provides access to platforms and web apps in a SaaS mode. Users can engage with containerized Interactive Graphical Applications (IGAs), specialised geospatial data exploration web apps, and customizable dashboards. This allows users not only to explore and analyse results but also to execute new applications or analyses and customise their computing experiences, all accessed from the same integrated Hub interface. Ultimately, this enhances user experience, optimises software usage costs, and promotes ease of use, making it more accessible to the broader EO community.</p>
+<p>The Application Hub ML-Lab service leverages <strong>JupyterHub</strong> as an application hub to manage and deploy various web applications, including <strong>MLflow</strong>, <strong>JupyterLab</strong>, <strong>Code Server</strong>, <strong>QGIS Remote Desktop</strong>, and <strong>STAC Browser</strong>. <strong>JupyterHub</strong> acts as a central platform, facilitating the launching and management of these applications, providing a seamless and integrated experience for our users.</p>
 
 
 

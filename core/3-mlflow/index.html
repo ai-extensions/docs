@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../intro/">
+        <link rel="prev" href="../2-jupyterhub/">
       
       
-        <link rel="next" href="../mlflow/">
+        <link rel="next" href="../4-jupyterlab/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>JupyterHub - ESA AI-Extensions App Hub User Manual</title>
+        <title>MLflow - ESA AI-Extensions App Hub User Manual</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#jupyterhub" class="md-skip">
+        <a href="#mlflow" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              JupyterHub
+              MLflow
             
           </span>
         </div>
@@ -358,11 +358,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../intro/" class="md-nav__link">
+      <a href="../1-intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Application Hub ML-Lab
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2-jupyterhub/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JupyterHub
   </span>
   
 
@@ -388,15 +409,72 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    MLflow
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    JupyterHub
+    MLflow
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#starting-mlflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Starting MLflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practical Examples
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -410,28 +488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mlflow/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    ML-Flow
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../jupyterlab/" class="md-nav__link">
+      <a href="../4-jupyterlab/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -452,7 +509,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../codeserver/" class="md-nav__link">
+      <a href="../5-codeserver/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -473,7 +530,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws/" class="md-nav__link">
+      <a href="../6-aws/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -850,6 +907,41 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#starting-mlflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Starting MLflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practical Examples
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -866,16 +958,38 @@
   
 
 
-<h1 id="jupyterhub">JupyterHub</h1>
-<p>JupyterHub is a dedicated multi-user server that brings the power of JupyterLab to collaborative environments. It allows organizations to effortlessly deploy and manage Jupyter Notebook servers for multiple users, enabling seamless collaboration and resource sharing in data science and research settings. JupyterHub acts as a central platform, facilitating the launching and management of applications, providing a seamless and integrated experience for our users.</p>
-<p>After login on your dedicated App Hub instance (e.g. <a href="https://app-hub-ai-extensions-dev.terradue.com/">https://app-hub-ai-extensions-dev.terradue.com/</a>), you will be given the choice between different server options. These options are user-specific and depend on your registration profile settings. </p>
-<p>In the example shown below, seven server options are available: </p>
-<p><img alt="image" src="../imgs/jupyterhub_login_ALL.png" /></p>
-<p>Various web applications such as <strong>MLflow</strong>, <strong>JupyterLab</strong>, <strong>Code Server</strong> are managed and deployed within JupyterHub, which can be launched with two options <code>4GB RAM</code> and <code>12GB RAM</code>, below: 
-* <strong>Machine Learning Lab 0.10 Large (4GB RAM)</strong>
-* <strong>Machine Learning Lab 0.10 Large (12GB RAM)</strong></p>
-<p>various web applications, including , <strong>QGIS Remote Desktop</strong>, and <strong>STAC Browser</strong>. <strong>JupyterHub</strong> acts as a central platform, facilitating the launching and management of these applications, providing a seamless and integrated experience for our users.</p>
-<p>You can select one (e.g. "<strong>Machine Learning Lab 0.10 Large (12GB RAM)</strong>") and then click on <code>Start</code> to launch it. </p>
+<h1 id="mlflow">MLflow</h1>
+<h2 id="introduction">Introduction</h2>
+<p>The ML-Lab application integrates with MLflow, an open-source platform for managing the machine learning (ML) lifecycle. MLflow provides tools and functionalities to track experiments, package models, version models, model hyperparameters, packaging code into reproducible runs, deploy models, monitor performance, and enable collaboration among team members. MLflow enables users to effectively organize and monitor their ML projects, enabling collaboration, reproducibility, and streamlined deployment workflows.</p>
+<p>The following outlines the specific ways in which MLflow is used within the service:</p>
+<ul>
+<li>Experiment Tracking: The service utilises MLflow's experiment tracking capabilities to record parameters, metrics, and artefacts associated with each machine learning experiment. This enables reproducibility and facilitates comparison between different model configurations.</li>
+<li>Model Packaging: MLflow is used to package trained models in a standardised format. This includes saving the model artefacts, dependencies, and metadata required for deployment. The packaged models are self-contained and can be easily shared or deployed in various environments.</li>
+<li>Model Versioning: MLflow's versioning functionality is leveraged to manage different versions of trained models. This allows for tracking the evolution of models over time, comparing different versions, and ensuring reproducibility. It also facilitates collaboration among team members working on the same project.</li>
+<li>Integration with Existing Tools: MLflow integrates with popular machine learning tools and frameworks such as <code>TensorFlow</code>, <code>PyTorch</code>, and <code>scikit-learn</code>. This allows seamless integration of MLflow's tracking and management capabilities within the existing machine learning workflow, enhancing productivity and compatibility.</li>
+</ul>
+<p>By incorporating MLflow into the ML-Lab application, we ensure proper management, tracking, packaging, versioning, deployment, monitoring, and collaboration throughout the machine learning lifecycle. This enables efficient development, deployment, and maintenance of machine learning models within the service.</p>
+<h2 id="starting-mlflow">Starting MLflow</h2>
+<p>On the JupyterLab dashboard, click on the <code>mlflow</code> Logo.</p>
+<p><img alt="image" src="../imgs/mlflow_icon.png" /></p>
+<p>The <code>MLflow</code> dashboard will appear.</p>
+<p><img alt="image" src="../imgs/mlflow_dashboard.png" /></p>
+<h2 id="practical-examples">Practical Examples</h2>
+<p>Below are a few examples of using <code>MLflow</code> in a ML project workflow:
+* The user can select one or multiple runs to <strong>Compare</strong></p>
+<p><img alt="image" src="../imgs/selectrun.png" /></p>
+<ul>
+<li>The user can see a quick overview of each run and select which parameter(s) to analyse and plot on the graph</li>
+</ul>
+<p><img alt="image" src="../imgs/rundetails.png" /></p>
+<ul>
+<li>The user compares different parameteres fed to the CNN model</li>
+</ul>
+<p><img alt="image" src="../imgs/parameters.png" /></p>
+<ul>
+<li>The user compares evaluation metrics of each run, to opt for the best model for his/her application. </li>
+</ul>
+<p><img alt="image" src="../imgs/metrics.png" /></p>
 
 
 

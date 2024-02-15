@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../../intro/registration/">
+        <link rel="prev" href="../5-codeserver/">
       
       
-        <link rel="next" href="../jupyterhub/">
+        <link rel="next" href="../../plus/qgis/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Application Hub ML-Lab - ESA AI-Extensions App Hub User Manual</title>
+        <title>Access to object storage - ESA AI-Extensions App Hub User Manual</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#application-hub-ml-lab" class="md-skip">
+        <a href="#access-to-object-storage" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Application Hub ML-Lab
+              Access to object storage
             
           </span>
         </div>
@@ -355,19 +355,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../1-intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -376,7 +367,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -389,7 +379,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../jupyterhub/" class="md-nav__link">
+      <a href="../2-jupyterhub/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -410,11 +400,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../mlflow/" class="md-nav__link">
+      <a href="../3-mlflow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    ML-Flow
+    MLflow
   </span>
   
 
@@ -431,7 +421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../jupyterlab/" class="md-nav__link">
+      <a href="../4-jupyterlab/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -452,7 +442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../codeserver/" class="md-nav__link">
+      <a href="../5-codeserver/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -470,10 +460,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../aws/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -482,6 +481,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -866,11 +866,12 @@
   
 
 
-<h1 id="application-hub-ml-lab">Application Hub ML-Lab</h1>
-<p>The Application Hub is a comprehensive and modular platform delivering Software-as-a-Service (SaaS) products, designed to cater to the diverse and multifaceted needs of the EO community. It is crafted to support a wide array of stakeholders, from developers and service providers integrating cutting-edge algorithms to researchers harnessing computational power, and analysts requiring clear and concise visualisations. At the heart of the Application Hub is the ability to manage the delivery of work environments and tools for a wide range of user tasks, such as develop, host, execute, and perform exploratory analysis of EO applications, all managed within a single, unified Cloud infrastructure.</p>
-<p>The Application Hub, leveraging <strong>Kubernetes</strong> and <strong>JupyterHub</strong>, creates a robust, scalable, and user-centric platform for EO applications and analytics. <strong>Kubernetes</strong> ensures scalable operation of containerized applications by managing deployment, operation, and traffic distribution, while <strong>JupyterHub</strong> orchestrates the launching, scaling, and management of application instances, acting as the primary gateway for user requests. The Hub uses dedicated namespaces for each application pod, ensuring organisation, security, and isolation. It also dynamically configures application pods based on the task, and personalises the experience based on user profiles through Kube Spawner. This design ensures the Application Hub remains modular, scalable, and capable of catering to the dynamic requirements of EO tasks.</p>
-<p>Typically, the Application Hub provides access to platforms and web apps in a SaaS mode. Users can engage with containerized Interactive Graphical Applications (IGAs), specialised geospatial data exploration web apps, and customizable dashboards. This allows users not only to explore and analyse results but also to execute new applications or analyses and customise their computing experiences, all accessed from the same integrated Hub interface. Ultimately, this enhances user experience, optimises software usage costs, and promotes ease of use, making it more accessible to the broader EO community.</p>
-<p>The Application Hub ML-Lab service leverages <strong>JupyterHub</strong> as an application hub to manage and deploy various web applications, including <strong>MLflow</strong>, <strong>JupyterLab</strong>, <strong>Code Server</strong>, <strong>QGIS Remote Desktop</strong>, and <strong>STAC Browser</strong>. <strong>JupyterHub</strong> acts as a central platform, facilitating the launching and management of these applications, providing a seamless and integrated experience for our users.</p>
+<h1 id="access-to-object-storage">Access to object storage</h1>
+<p>A dedicated object storage (in this example Amazon S3) is pre-configured to be accessed from the App Hub. This can be done with the Amazon Web Server (AWS) <code>aws s3</code> commands in the AWS CLI.</p>
+<p>For example, to list the content of a specific S3 bucket, you can use the command below.
+<div class="highlight"><pre><span></span><code>aws s3 ls &lt;bucket_name&gt;
+</code></pre></div>
+Other examples with full syntax on using the <code>aws s3</code> command are described in the official <a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html">AWS website</a>.</p>
 
 
 
