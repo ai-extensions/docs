@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../codeserver/">
+        <link rel="prev" href="../intro/">
       
       
-        <link rel="next" href="../../plus/qgis/">
+        <link rel="next" href="../mlflow/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Access to object storage - ESA AI-Extensions App Hub User Manual</title>
+        <title>JupyterHub - ESA AI-Extensions App Hub User Manual</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#access-to-object-storage" class="md-skip">
+        <a href="#jupyterhub" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Access to object storage
+              JupyterHub
             
           </span>
         </div>
@@ -376,10 +376,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../jupyterhub/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -388,6 +397,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -460,19 +470,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../aws/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -481,7 +482,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -866,12 +866,16 @@
   
 
 
-<h1 id="access-to-object-storage">Access to object storage</h1>
-<p>A dedicated object storage (in this example Amazon S3) is pre-configured to be accessed from the App Hub. This can be done with the Amazon Web Server (AWS) <code>aws s3</code> commands in the AWS CLI.</p>
-<p>For example, to list the content of a specific S3 bucket, you can use the command below.
-<div class="highlight"><pre><span></span><code>aws s3 ls &lt;bucket_name&gt;
-</code></pre></div>
-Other examples with full syntax on using the <code>aws s3</code> command are described in the official <a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html">AWS website</a>.</p>
+<h1 id="jupyterhub">JupyterHub</h1>
+<p>JupyterHub is a dedicated multi-user server that brings the power of JupyterLab to collaborative environments. It allows organizations to effortlessly deploy and manage Jupyter Notebook servers for multiple users, enabling seamless collaboration and resource sharing in data science and research settings. JupyterHub acts as a central platform, facilitating the launching and management of applications, providing a seamless and integrated experience for our users.</p>
+<p>After login on your dedicated App Hub instance (e.g. <a href="https://app-hub-ai-extensions-dev.terradue.com/">https://app-hub-ai-extensions-dev.terradue.com/</a>), you will be given the choice between different server options. These options are user-specific and depend on your registration profile settings. </p>
+<p>In the example shown below, seven server options are available: </p>
+<p><img alt="image" src="../imgs/jupyterhub_login_ALL.png" /></p>
+<p>Various web applications such as <strong>MLflow</strong>, <strong>JupyterLab</strong>, <strong>Code Server</strong> are managed and deployed within JupyterHub, which can be launched with two options <code>4GB RAM</code> and <code>12GB RAM</code>, below: 
+* <strong>Machine Learning Lab 0.10 Large (4GB RAM)</strong>
+* <strong>Machine Learning Lab 0.10 Large (12GB RAM)</strong></p>
+<p>various web applications, including , <strong>QGIS Remote Desktop</strong>, and <strong>STAC Browser</strong>. <strong>JupyterHub</strong> acts as a central platform, facilitating the launching and management of these applications, providing a seamless and integrated experience for our users.</p>
+<p>You can select one (e.g. "<strong>Machine Learning Lab 0.10 Large (12GB RAM)</strong>") and then click on <code>Start</code> to launch it. </p>
 
 
 
