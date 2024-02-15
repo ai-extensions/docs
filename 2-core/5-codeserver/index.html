@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../5-codeserver/">
+        <link rel="prev" href="../4-jupyterlab/">
       
       
-        <link rel="next" href="../../plus/qgis/">
+        <link rel="next" href="../6-aws/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Access to object storage - ESA AI-Extensions App Hub User Manual</title>
+        <title>Code Server - ESA AI-Extensions App Hub User Manual</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#access-to-object-storage" class="md-skip">
+        <a href="#code-server" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Access to object storage
+              Code Server
             
           </span>
         </div>
@@ -272,7 +272,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../intro/foreword/" class="md-nav__link">
+      <a href="../../1-intro/1-foreword/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -293,7 +293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../intro/registration/" class="md-nav__link">
+      <a href="../../1-intro/2-registration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -439,27 +439,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../5-codeserver/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Code Server
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -472,7 +451,77 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Code Server
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Code Server
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#starting-code-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      Starting Code Server
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6-aws/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -481,7 +530,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -850,6 +898,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#starting-code-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      Starting Code Server
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -866,12 +940,33 @@
   
 
 
-<h1 id="access-to-object-storage">Access to object storage</h1>
-<p>A dedicated object storage (in this example Amazon S3) is pre-configured to be accessed from the App Hub. This can be done with the Amazon Web Server (AWS) <code>aws s3</code> commands in the AWS CLI.</p>
-<p>For example, to list the content of a specific S3 bucket, you can use the command below.
-<div class="highlight"><pre><span></span><code>aws s3 ls &lt;bucket_name&gt;
-</code></pre></div>
-Other examples with full syntax on using the <code>aws s3</code> command are described in the official <a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html">AWS website</a>.</p>
+<h1 id="code-server">Code Server</h1>
+<h2 id="introduction">Introduction</h2>
+<p>Code Server enables users to run Visual Studio Code (VS Code), a lightweight and versatile source code editor that combines the simplicity of a text editor with powerful developer tools, providing an intuitive and customizable environment for coding across various programming languages. With Code Server, VS Code and all its functionalities are available directly from the Application Hub server. </p>
+<p>Code Server extends the capabilities of JupyterLab by providing a cloud-based IDE with GPU resources that enables efficient coding, collaboration, and development of ML models. It enables AI-users to build, train, and test ML models using popular frameworks like <code>PyTorch</code> or <code>TensorFlow</code>. The GPU support enhances model training performance, allowing for faster iterations and improved productivity.</p>
+<p>The following outlines the specific ways in which Code Server is used within the service:</p>
+<ul>
+<li>Development Environment: Code Server provides a cloud-based development environment that eliminates the need for local installations and configurations. AI-users can access Code Server through a web browser, enabling her to work from any device with an internet connection. This flexibility allows her to work remotely, collaborate with team members, and access her projects and codebase from anywhere.</li>
+<li>Code Editing and Collaboration: Code Server offers a powerful code editing experience with features like syntax highlighting, code completion, and code navigation. AI-users can write, edit, and debug code in various programming languages, including Python, R, or Julia. Code Server also supports collaboration features, allowing multiple users to edit and work on the same codebase simultaneously, enabling efficient teamwork and knowledge sharing.</li>
+<li>ML Model Development: AI-users can leverage Code Server to develop ML models efficiently. She can use popular ML frameworks and libraries like <code>TensorFlow</code>, <code>PyTorch</code>, or <code>scikit-learn</code> to build, train, and evaluate models. Code Server's integrated terminal allows her to execute commands and run experiments seamlessly.</li>
+<li>Git Integration: Code Server integrates with Git, a version control system, enabling AI-users to manage her codebase effectively. She can perform Git operations such as cloning repositories, creating branches, committing changes, and pushing code to remote repositories directly from within Code Server. This integration facilitates code versioning, collaboration, and easy synchronisation with code hosting platforms like GitHub or GitLab.</li>
+<li>Extension Ecosystem: Code Server provides an extension ecosystem that allows AI-users to customise and enhance her development environment. She can install extensions for additional functionalities, such as linting, code formatting, code snippets, or ML-specific tools. This extensibility ensures that AI-users can tailor her coding environment to meet her specific needs and preferences.</li>
+<li>Integrated Terminal: Code Server includes an integrated terminal, enabling AI-users to execute command-line operations without leaving the IDE. She can run scripts, install dependencies, manage virtual environments, and perform various system-level tasks directly within Code Server. This seamless integration streamlines her workflow and eliminates the need for switching between different tools.</li>
+</ul>
+<p>By incorporating Code Server into the service, we provide AI-users with a cloud-based IDE that supports her scenarios and enables efficient coding, collaboration, and ML model development. Code Server's accessibility, collaboration features, and integration with essential tools like Git make it an ideal choice for empowering AI-users to achieve her goals effectively.</p>
+<h2 id="starting-code-server">Starting Code Server</h2>
+<p>On the JupyterLab dashboard, click on the Code Server Logo.</p>
+<p><img alt="image" src="../imgs/codeserver_icon.png" /></p>
+<p>The Code Server dashboard will appear.</p>
+<p><img alt="image" src="../imgs/codeserver_dashboard.png" /></p>
+<p>You have access of all these functionalities from the vertical panel in the top-left corner of the dashboard:
+* <strong>Menu</strong>: access functions and settings within VS Code
+* <strong>Explore</strong>: navigate and manage files and directories in your workspace 
+* <strong>Search</strong>: find specific files, text, or symbols within your workspace
+* <strong>Source Control</strong>: manage version control system such as Git directly within VS Code
+* <strong>Run and Debug</strong>: execute and debug code with built-in tools
+* <strong>Extensions</strong>: enhance functionality by installing and managing extensions to support the development workflow 
+* <strong>Test</strong>: run tests and view test outptus </p>
 
 
 
