@@ -1,3 +1,5 @@
 # User Scenario 6 - Alice starts a training job on a remote machine
 
-*This has not been implemented yet, it's work in progress...*
+This scenario involves executing a training job remotely on a different machine, which advantages are twofold: one one hand, the remote machine can be provisioned on-demand through a cloud provider, providing the user with the flexibility to access additional resources such as CPUs and GPUs; on the other hand, this enables the user to keep on working without being hindered by the resource-intensive and time-consuming training process. Once the experiment begins on the remote machine, the user receives a notification containing a link to the experiment in MLflow, enabling an active monitoring on the training progress while reviewing the results in real-time. 
+
+*This Scenario has not been implemented yet, it's work in progress...*
