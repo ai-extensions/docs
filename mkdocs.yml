@@ -1,0 +1,48 @@
+site_name: AI-Extensions Application Hub - User Manual
+site_description: 'AI-Extensions Application - Hub User Manual'
+# Repository
+
+repo_name: 'ai-extensions/docs'
+repo_url: 'https://github.com/ai-extensions/docs'
+edit_uri: 'blob/main/docs/src/'
+#site_url: 'https://github.io/ai-docs'
+
+theme:
+  name: material
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - attr_list
+
+plugins:
+  - search
+  - mkdocs-jupyter
+
+nav:
+  - Summary: 'index.md'
+  - AI-Extensions:
+    - 1-intro/1-foreword.md
+    - 1-intro/2-registration.md
+  - ML-Lab:
+    - 2-core/1-intro.md
+    - 2-core/2-jupyterhub.md
+    - 2-core/3-mlflow.md
+    - 2-core/4-jupyterlab.md
+    - 2-core/5-codeserver.md
+    - 2-core/6-aws.md
+  - Additional Apps:
+    - 3-plus/1-qgis.md
+    - 3-plus/2-stac.md
+  - User Scenarios:
+    - 4-scenarios/scenario1.md
+    - 4-scenarios/scenario2.md
+    - 4-scenarios/scenario3.md
+    - 4-scenarios/scenario4.md
+    - 4-scenarios/scenario5.md
+    - 4-scenarios/scenario6.md
+    - 4-scenarios/scenario7.md
+    - 4-scenarios/scenario8.md
+    - 4-scenarios/scenario9.md
+    - 4-scenarios/scenario10.md
