@@ -1,6 +1,6 @@
 # User Scenario 1 - Alice does Exploratory Data Analysis (EDA)
 
-The purpose of Explaratory Data Analysis (EDA) is to analyse the data that will be used to train and evaluate Machine Learning models. In this Notebook are firstly shown the steps to access and visualize EO data (e.g. Sentinel-2 scenes) and their metadata using STAC API. Secondly, a pre-arranged DataFrame containing labeled geospatial data with reflectance values and vegetation indices is loaded and used for the purpose of EDA.
+The purpose of Exploratory Data Analysis (EDA) is to analyse the data that will be used to train and evaluate Machine Learning models. In this Notebook are firstly shown the steps to access and visualize EO data (e.g. Sentinel-2 scenes) and their metadata using STAC API. Secondly, a pre-arranged DataFrame containing labeled geospatial data with reflectance values and vegetation indices is loaded and used for the purpose of EDA.
 
 The requirements defined in the User Scenario 1 are:
 
