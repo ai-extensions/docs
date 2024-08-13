@@ -11,4 +11,6 @@ The requirements defined in the User Scenario 1 are:
 * Perform analysis on the EO data labels to gain insights and understand patterns. This includes tasks such as calculating statistical summaries, generating histograms or scatter plots, as well as making correlation matrix for understanding relationships between variables.
 * Document and share of results and findings of the EDA process by exporting charts and visualisation plots into a report.
 
-The link to the Notebook for User Scenario 1 is: [https://github.com/ai-extensions/notebooks/blob/main/scenario-1/s1-eda.ipynb](https://github.com/ai-extensions/notebooks/blob/main/scenario-1/s1-eda.ipynb)
+The link to the Notebook for User Scenario 1 is: [https://github.com/ai-extensions/notebooks/blob/main/scenario-1/s1-eda.ipynb](https://github.com/ai-extensions/notebooks/blob/main/scenario-1/s1-eda.ipynb).
+
+For more information and practical examples, see the related article [**Exploratory Data Analysis**](https://discuss.terradue.com/t/announcing-the-launch-of-the-ai-ml-enhancement-project-for-gep-and-urban-tep-exploitation-platforms/1188/3#aiml-enhancement-project-exploratory-data-analysis-user-scenario-1).

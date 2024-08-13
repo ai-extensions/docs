@@ -13,3 +13,5 @@ The requirements defined in the User Scenario 4 are:
 * Depending on the access permissions and licensing, the user identifies labelled EO a dataset stored on AWS S3 bucket and is given the option to either download it or integrate it into the workflow for further analysis or model training.
 
 The link to the Notebook for User Scenario 4 is: ​[​https://github.com/ai-extensions/notebooks/blob/main/scenario-4/s4-discoveringLabelledEOData.ipynb](​https://github.com/ai-extensions/notebooks/blob/main/scenario-4/s4-discoveringLabelledEOData.ipynb).
+
+For more information and practical examples, see the related article [**Discovering Labelled EO Data with STAC**](https://discuss.terradue.com/t/announcing-the-launch-of-the-ai-ml-enhancement-project-for-gep-and-urban-tep-exploitation-platforms/1188/7#aiml-enhancement-project-discovering-labelled-eo-data-with-stac-1).

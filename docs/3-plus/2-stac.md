@@ -13,7 +13,7 @@ The STAC Browser enhances AI-users's workflows by providing a user-friendly inte
 
 By incorporating a STAC Browser into the service, AI-users gain a powerful tool for EO data and training datasets discovery. The browser's user-friendly interface, advanced search capabilities, and metadata visualisation features simplify the process of finding and exploring relevant data. This enables AI-users to efficiently identify and select the data necessary for her training datasets and other ML workflows.
 
-A dedicated article entitled (**Discovering Labelled EO Data with STAC**)[https://discuss.terradue.com/t/announcing-the-launch-of-the-ai-ml-enhancement-project-for-gep-and-urban-tep-exploitation-platforms/1188/7#aiml-enhancement-project-discovering-labelled-eo-data-with-stac-1] describes comprehensively how to exploit the STAC format to discover labelled EO data.
+A dedicated article entitled [**Discovering Labelled EO Data with STAC**](https://discuss.terradue.com/t/announcing-the-launch-of-the-ai-ml-enhancement-project-for-gep-and-urban-tep-exploitation-platforms/1188/7#aiml-enhancement-project-discovering-labelled-eo-data-with-stac-1) describes comprehensively how to exploit the STAC format to discover labelled EO data.
 
 ## Starting STAC Browser
 The STAC Browser app can be launched at login with the option "**STAC Browser for AI-Extensions STAC API**".

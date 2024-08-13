@@ -10,3 +10,5 @@ The requirements defined in the User Scenario 3 are:
 * Extract metadata of the created STAC item, and show its relevant information, including visualisation on spatial map.
 
 The link to the Notebook for User Scenario 3 is: ​[​https://github.com/ai-extensions/notebooks/blob/main/scenario-3/s3-describingEOdata.ipynb](​https://github.com/ai-extensions/notebooks/blob/main/scenario-3/s3-describingEOdata.ipynb).
+
+For more information and practical examples, see the related article [**Describing Labelled EO Data with STAC**](https://discuss.terradue.com/t/announcing-the-launch-of-the-ai-ml-enhancement-project-for-gep-and-urban-tep-exploitation-platforms/1188/7#aiml-enhancement-project-describing-labelled-eo-data-with-stac-1).

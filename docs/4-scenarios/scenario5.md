@@ -22,6 +22,8 @@ The requirements defined in the User Scenario 5 that were included in this Noteb
 
 The link to this Notebook is: ​[​https://github.com/ai-extensions/notebooks/blob/main/scenario-5/trials/s5-newMLModel.ipynb](​https://github.com/ai-extensions/notebooks/blob/main/scenario-5/trials/s5-newMLModel.ipynb).
 
+For more information and practical examples, see the related article [**Developing a new ML model and tracking with MLflow**](https://discuss.terradue.com/t/announcing-the-launch-of-the-ai-ml-enhancement-project-for-gep-and-urban-tep-exploitation-platforms/1188/8). 
+
 ## Notebook for **“Implementation of EuroSAT dataset STAC”**
 The EuroSAT dataset is based on ESA's Sentinel-2 data, covering 13 spectral bands and consisting out of 10 classes with a total of 27,000 labeled and geo-referenced images ([https://github.com/phelber/EuroSAT](https://github.com/phelber/EuroSAT)). This Notebook was used to create a STAC Catalog, a STAC Collection, and STAC Items for the entire EuroSAT dataset. Each STAC Item was generated with three assets: the EuroSAT's georeferenced patches (in .tif format), their labels (in `.geojson` format), and their RGB-composite thumbnails (in `.jpeg` format). These STAC objects were posted into ESA-AI dedicated S3 bucket (s3://ai-ext-bucket-dev/), and subsequently posted on the ESA-AI dedicated STAC endpoint ([https://ai-extensions-stac.terradue.com](https://ai-extensions-stac.terradue.com)). 
 

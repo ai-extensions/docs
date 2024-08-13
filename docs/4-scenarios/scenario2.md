@@ -12,3 +12,5 @@ The requirements defined in the User Scenario 2 are:
 * Use Labelled Data for Supervised Machine Learning to train models, evaluate their performance, and make predictions on new, unlabeled EO data.
 
 The link to the Notebook for User Scenario 2 is: ​[​https://github.com/ai-extensions/notebooks/blob/main/scenario-2/s2-labellingEOdata.ipynb](​https://github.com/ai-extensions/notebooks/blob/main/scenario-2/s2-labellingEOdata.ipynb).
+
+For more information and practical examples, see the related article [**Labelling EO Data**](https://discuss.terradue.com/t/announcing-the-launch-of-the-ai-ml-enhancement-project-for-gep-and-urban-tep-exploitation-platforms/1188/4#aiml-enhancement-project-labelling-eo-data-user-scenario-2-1).

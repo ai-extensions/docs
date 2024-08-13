@@ -12,3 +12,7 @@ The requirements defined in the User Scenario 8 are:
 * Selection of pre-trained ML model, in this case with a UNet backbone trained on ImageNet, and subsequently implementation of fine-tuning adjustments.
 * Evaluation of outputs using different techniques on unseen dataset (e.g., plotting Loss functions, calculating mIOU).
 * Inference on the unseen test dataset.
+
+The link to the Notebook for User Scenario 8 is: [https://github.com/ai-extensions/notebooks/blob/main/scenario-8/s8_Transfer_Learning.ipynb](https://github.com/ai-extensions/notebooks/blob/main/scenario-8/s8_Transfer_Learning.ipynb).
+
+For more information and practical examples, see the related article [**Reusing an existing pre-trained ML model**](https://discuss.terradue.com/t/announcing-the-launch-of-the-ai-ml-enhancement-project-for-gep-and-urban-tep-exploitation-platforms/1188/11#aiml-enhancement-project-reusing-an-existing-pre-trained-model-1). 

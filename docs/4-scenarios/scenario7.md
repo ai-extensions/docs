@@ -11,3 +11,7 @@ The requirements defined in the User Scenario 7 are:
 * Post STAC files onto S3 bucket.
 * Publish STAC files onto STAC endpoint.
 * Search STAC items on STAC endpoint with standard query params such as bbox and time range, but also with ML-specific params such as model architecture, hyperparameters.
+
+The link to the Notebook for User Scenario 7 is: [https://github.com/ai-extensions/notebooks/blob/main/scenario-7/s7-CreateSTAC-describingMLmodel.ipynb](https://github.com/ai-extensions/notebooks/blob/main/scenario-7/s7-CreateSTAC-describingMLmodel.ipynb).
+
+For more information and practical examples, see the related article [**Describig a trained ML model with STAC**](https://discuss.terradue.com/t/announcing-the-launch-of-the-ai-ml-enhancement-project-for-gep-and-urban-tep-exploitation-platforms/1188/10#aiml-enhancement-project-describing-a-trained-ml-model-with-stac-1). 
