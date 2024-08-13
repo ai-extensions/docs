@@ -867,8 +867,22 @@
 
 
 <h1 id="user-scenario-9-alice-creates-a-training-dataset">User Scenario 9 - Alice creates a training dataset</h1>
-<p>In this Scenario, Alice creates a deep learning dataset with image chips, which involves extracting smaller image patches (chips) from a large EO image and associating them with corresponding land-cover labels, using a semantic segmentation approach. </p>
-<p><em>This Scenario has not been implemented yet, it's work in progress...</em></p>
+<p>This scenario demonstrates how to create a deep learning dataset using image chips. Annotating a dataset is a meticulous and time-consuming process that demands precision and focus. To ensure accuracy, the dataset must be reviewed by multiple experts. However, various computer vision techniques can expedite this process. For instance, an initial labeling can be done by another ML model, with human experts refining these labels to ensure their correctness.</p>
+<p>In this Scenario, the user generates a labelled dataset for a semantic segmentation task using:</p>
+<ul>
+<li>a human-annotation approach with the IRIS Tool, an AI-assisted tool that enhances image segmentation and classification for satellite imagery and other types of images, developed by ESA/ESRIN Phi-Lab (see (documentation)[https://github.com/ESA-PhiLab/iris]).</li>
+<li>an automated ML-driven approach consisting on a <code>RandomForest</code> model for segmenting task. </li>
+</ul>
+<p>The process of creating the training dataset is finalised with the creation of the STAC objects of each data (i.e. the generated image patches and their corresponding masks), and the related publication on a dedicated S3 bucket and STAC endpoint.</p>
+<p>The requirements defined in the User Scenario 9 are:</p>
+<ul>
+<li>Import libraries (e.g., <code>pystac</code>, <code>rasterio</code>, <code>boto3</code>, <code>sklearn</code>).</li>
+<li>Load the Sentinel-2 data using STAC.</li>
+<li>Generate EO image patches with their corresponding masks (annotated with three classes <code>water</code>, <code>non-water</code> and <code>not-applicable</code>), using both an AI-driven approach and an human-annotation approach.</li>
+<li>Create STAC Objects, including STAC Item for each image patch, STAC collection, and STAC catalog to describe the dataset with its metadata.</li>
+<li>Post the STAC Objects to a dedicated S3 bucket.</li>
+<li>Publish the STAC Objects into a dedicated STAC endpoint.</li>
+</ul>
 
 
 
