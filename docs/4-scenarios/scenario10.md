@@ -15,4 +15,3 @@ The requirements defined in the User Scenario 10 are:
 The link to the Notebook for User Scenario 10 is: [https://github.com/ai-extensions/notebooks/blob/main/scenario-10/s10-search_executeMLmodel.ipynb](https://github.com/ai-extensions/notebooks/blob/main/scenario-10/s10-search_executeMLmodel.ipynb).
 
 For more information and practical examples, see the related article [**Discovering, deploying and consuming an ML model**](https://discuss.terradue.com/t/announcing-the-launch-of-the-ai-ml-enhancement-project-for-gep-and-urban-tep-exploitation-platforms/1188/14#aiml-enhancement-project-discovering-deploying-and-consuming-an-ml-model-1). 
-
