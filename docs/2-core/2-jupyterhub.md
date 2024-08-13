@@ -7,15 +7,16 @@ In the example shown below, seven server options are available:
 
 ![image](./imgs/jupyterhub_login_ALL.png)
 
-JupyterHub acts as a central platform, facilitating the launching and management of applications, providing a seamless and integrated experience for our users. Various web applications such as **MLflow**, **JupyterLab**, **Code Server** are managed and deployed within JupyterHub, which can be launched by selecting either servers with `4GB RAM` and `12GB RAM` availability, below: 
+JupyterHub acts as a central platform, facilitating the launching and management of applications and providing a seamless and integrated experience for our users. Various web applications such as **MLflow**, **JupyterLab**, **Code Server** are managed and deployed within JupyterHub. 
 
-* **Machine Learning Lab X.Y Small (4GB RAM)**
-* **Machine Learning Lab X.Y Large (12GB RAM)**
+JupyterHub can be launched by selecting either **Small** or **Large** servers, according to the resources needed by the user: 
 
-Dedicated instances for other applications can be launched with their respective selection and then by clicking on `Start` to launch them.
+* **Machine Learning Lab - Small**: server with 1 CPU and 4GB of RAM 
+* **Machine Learning Lab - Large**: server with 3 CPU and 14GB of RAM
 
-* **Machine Learning Lab X.Y Small - Argo Workflows (4GB RAM)**
+Other applications can be launched by selecting their dedicated instances and then clicking on `Start`.
+
 * **Machine Learning Lab with GPU 0.10**
-* **STAC Browseer Earth-Search AWS**
-* **STAC Browseer for AI-Extensions STAC-API**
+* **STAC Browser Earth-Search AWS**
+* **STAC Browser for AI-Extensions STAC API**
 * **QGIS (includes tooling and plugins v0.4 aws)**
