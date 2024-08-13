@@ -1,7 +1,7 @@
 # STAC API
 
 ## Introduction
-The SpatioTemporal Asset Catalog (STAC) is a powerful standard for describing geospatial data, so it can be more easily worked with, indexed, discovered and shared. As part of the Application Hub, the system integrates the STAC Browser, which allows AI-users to discover and explore EO data and training datasets. The STAC Browser supports easy search and retrieval of relevant EO data through the STAC standard, enabling efficient data discovery and selection for ML tasks.
+The SpatioTemporal Asset Catalog (STAC) is a powerful standard for describing geospatial data, so it can be more easily worked with, indexed, discovered and shared. As part of the Application Hub, the system integrates the **STAC Browser**, which allows AI-users to discover and explore EO data and training datasets. The STAC Browser supports easy search and retrieval of relevant EO data through the STAC standard, enabling efficient data discovery and selection for ML tasks.
 
 The STAC Browser enhances AI-users's workflows by providing a user-friendly interface for browsing and exploring the available EO data and training datasets. The following highlights the key features and benefits of using the STAC Browser to support AI-users scenarios:
 
@@ -13,8 +13,10 @@ The STAC Browser enhances AI-users's workflows by providing a user-friendly inte
 
 By incorporating a STAC Browser into the service, AI-users gain a powerful tool for EO data and training datasets discovery. The browser's user-friendly interface, advanced search capabilities, and metadata visualisation features simplify the process of finding and exploring relevant data. This enables AI-users to efficiently identify and select the data necessary for her training datasets and other ML workflows.
 
+A dedicated article entitled (**Discovering Labelled EO Data with STAC**)[https://discuss.terradue.com/t/announcing-the-launch-of-the-ai-ml-enhancement-project-for-gep-and-urban-tep-exploitation-platforms/1188/7#aiml-enhancement-project-discovering-labelled-eo-data-with-stac-1] describes comprehensively how to exploit the STAC format to discover labelled EO data.
+
 ## Starting STAC Browser
-The dedicated STAC Browser app can be launched at login with the option "**STAC Browser for AI-Extensions STAC API**".
+The STAC Browser app can be launched at login with the option "**STAC Browser for AI-Extensions STAC API**".
 
 ![image](./imgs/login_choice_STAC.png)
 
