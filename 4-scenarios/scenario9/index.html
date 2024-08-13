@@ -870,7 +870,7 @@
 <p>This scenario demonstrates how to create a deep learning dataset using image chips. Annotating a dataset is a meticulous and time-consuming process that demands precision and focus. To ensure accuracy, the dataset must be reviewed by multiple experts. However, various computer vision techniques can expedite this process. For instance, an initial labeling can be done by another ML model, with human experts refining these labels to ensure their correctness.</p>
 <p>In this Scenario, the user generates a labelled dataset for a semantic segmentation task using:</p>
 <ul>
-<li>a human-annotation approach with the IRIS Tool, an AI-assisted tool that enhances image segmentation and classification for satellite imagery and other types of images, developed by ESA/ESRIN Phi-Lab (see (documentation)[https://github.com/ESA-PhiLab/iris]).</li>
+<li>a human-annotation approach with the IRIS Tool, an AI-assisted tool that enhances image segmentation and classification for satellite imagery and other types of images, developed by ESA/ESRIN Phi-Lab (see <a href="https://github.com/ESA-PhiLab/iris">documentation</a>).</li>
 <li>an automated ML-driven approach consisting on a <code>RandomForest</code> model for segmenting task. </li>
 </ul>
 <p>The process of creating the training dataset is finalised with the creation of the STAC objects of each data (i.e. the generated image patches and their corresponding masks), and the related publication on a dedicated S3 bucket and STAC endpoint.</p>
@@ -883,6 +883,8 @@
 <li>Post the STAC Objects to a dedicated S3 bucket.</li>
 <li>Publish the STAC Objects into a dedicated STAC endpoint.</li>
 </ul>
+<p>The link to the Notebook for User Scenario 9 is: <a href="https://github.com/ai-extensions/notebooks/blob/main/scenario-9/s9-CreatingTrainingData.ipynb">https://github.com/ai-extensions/notebooks/blob/main/scenario-9/s9-CreatingTrainingData.ipynb</a>.</p>
+<p>For more information and practical examples, see the related article <a href="https://discuss.terradue.com/t/announcing-the-launch-of-the-ai-ml-enhancement-project-for-gep-and-urban-tep-exploitation-platforms/1188/13#aiml-enhancement-project-creating-a-training-dataset-1"><strong>Creating a training Dataset</strong></a>.</p>
 
 
 
