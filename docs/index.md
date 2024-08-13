@@ -43,4 +43,4 @@ There are two types of users that benefit from the App Hub in this project:
 ## Outreach Articles
 A number of descriptive and informative articles, one for each User Scenario, have been written and published on Terradue’s Discuss platform. Each article describes one Jupyter Notebook, or an Application Package CWL, with information regarding the User Scenario(s) in a user-friendly way, its implementation via the Notebook(s) and the generated outputs, as well as links to relevant resources. 
 
-See related section [Articles](https://ai-extensions.github.io/docs/5-articles/articles.md) for more information. 
+See related section [Articles](https://ai-extensions.github.io/docs/5-articles/articles/) for more information. 
