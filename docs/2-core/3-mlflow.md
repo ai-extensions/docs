@@ -25,6 +25,7 @@ The `MLflow` dashboard will appear.
 ## Practical Examples
 
 Below are a few examples of using `MLflow` in a ML project workflow:
+
 * The user can select one or multiple runs to **Compare**
 
 ![image](./imgs/selectrun.png)
