@@ -15,7 +15,7 @@ The requirements defined in the User Scenario 6 are:
 
 The links to the App Package CWL files are: 
 
-* App Package CWL for training job: https://github.com/ai-extensions/notebooks/releases/download/v1.0.8/water-bodies-app-training.1.0.8.cwl 
-* App Package CWL for inference job: https://github.com/ai-extensions/notebooks/releases/download/v1.0.8/water-bodies-app-inference.1.0.8.cwl 
+* **App Package CWL for training job**: https://github.com/ai-extensions/notebooks/releases/download/v1.0.8/water-bodies-app-training.1.0.8.cwl 
+* **App Package CWL for inference job**: https://github.com/ai-extensions/notebooks/releases/download/v1.0.8/water-bodies-app-inference.1.0.8.cwl 
 
 For more information and practical examples, see the related article [**Training and Inference on a remote machine**](https://discuss.terradue.com/t/announcing-the-launch-of-the-ai-ml-enhancement-project-for-gep-and-urban-tep-exploitation-platforms/1188/9#aiml-enhancement-project-training-and-inference-on-a-remote-machine-1). 
