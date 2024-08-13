@@ -867,8 +867,24 @@
 
 
 <h1 id="user-scenario-6-alice-starts-a-training-job-on-a-remote-machine">User Scenario 6 - Alice starts a training job on a remote machine</h1>
-<p>This scenario involves executing a training job remotely on a different machine, which advantages are twofold: one one hand, the remote machine can be provisioned on-demand through a cloud provider, providing the user with the flexibility to access additional resources such as CPUs and GPUs; on the other hand, this enables the user to keep on working without being hindered by the resource-intensive and time-consuming training process. Once the experiment begins on the remote machine, the user receives a notification containing a link to the experiment in MLflow, enabling an active monitoring on the training progress while reviewing the results in real-time. </p>
-<p><em>This Scenario has not been implemented yet, it's work in progress...</em></p>
+<p>In this scenario, the ML practitioner Alice develops two Earth Observation (EO) Application Packages using the Common Workflow Language (CWL), as described in the OGC proposed best practices. The two App Packages CWLs are executed on a remote machine with a CWL runner for Kubernetes, enabling the submission of (parallel) kubernetes jobs distributed across the available resources in the cluster. MLflow is used for tracking experiments and related metrics for further analysis and comparison.</p>
+<ul>
+<li><strong>App Package CWL for a training job</strong>: Alice develops an ML training job with <code>RandomForest</code>, based on a segmentation approach for water bodies masking. The training process is repeated and evaluated for each training run with MLflow and in the end, the model evaluated with higher performance is selected and used for the inference service.</li>
+<li><strong>App Package CWL for inference job</strong>: this service performs inference on Sentinel-2 data, based on the best model developed with the training service. It takes as input parameter the STAC Item(s) of Sentinel-2 data and generates the inference water-bodies output mask(s).</li>
+</ul>
+<p>The requirements defined in the User Scenario 6 are:</p>
+<ul>
+<li>Write a Python application with its containerised environment</li>
+<li>Use the CWL standard, as described in the OGC proposed best practices, for writing EO Application Packages</li>
+<li>Dockerise all processing nodes and write the App Package CWLs through CI/CD pipeline with GitHub Actions, and release them as official repository releases</li>
+<li>Use the CWL runners for Kubernetes to submit (parallel) jobs, distributing them across the available resources in the cluster</li>
+<li>Configure MLflow server for tracking the experiments and log relevant information</li>
+</ul>
+<p>The links to the App Package CWL files are: </p>
+<ul>
+<li>App Package CWL for training job: https://github.com/ai-extensions/notebooks/releases/download/v1.0.8/water-bodies-app-training.1.0.8.cwl </li>
+<li>App Package CWL for inference job: https://github.com/ai-extensions/notebooks/releases/download/v1.0.8/water-bodies-app-inference.1.0.8.cwl </li>
+</ul>
 <p>For more information and practical examples, see the related article <a href="https://discuss.terradue.com/t/announcing-the-launch-of-the-ai-ml-enhancement-project-for-gep-and-urban-tep-exploitation-platforms/1188/9#aiml-enhancement-project-training-and-inference-on-a-remote-machine-1"><strong>Training and Inference on a remote machine</strong></a>. </p>
 
 
