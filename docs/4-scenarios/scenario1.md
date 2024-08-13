@@ -6,7 +6,7 @@ The requirements defined in the User Scenario 1 are:
 
 * Import Libraries for data manipulation (e.g. `pandas`), visualisation (e.g. `matplotlib`, `seaborn`), geospatial analysis (e.g `rasterio`).
 * Connect to STAC API for accessing Sentinel-2 data and their metadata, as well as DataFrames that contain labelled geospatial data, using appropriate authentication credentials.
-Query and retrieving the Data using specific parameters to filter out retrieved data (e.g time range, spatial extent, cloud cover).
+* Query and retrieving the Data using specific parameters to filter out retrieved data (e.g time range, spatial extent, cloud cover).
 * Visualising data (eg. S-2 metadata, spectral bands) and charts / graphs of the analysed relevant information (e.g. with `matplotlib`, `seaborn`). These are useful for gaining information about the data and for performing other tasks such as band combination, cloud masking, etc.
 * Perform analysis on the EO data labels to gain insights and understand patterns. This includes tasks such as calculating statistical summaries, generating histograms or scatter plots, as well as making correlation matrix for understanding relationships between variables.
 * Document and share of results and findings of the EDA process by exporting charts and visualisation plots into a report.
